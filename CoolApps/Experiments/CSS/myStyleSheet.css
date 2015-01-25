@@ -1,13 +1,19 @@
 ﻿body {
 
-    background-color: peachpuff;
+    background-color: #FFCC99;
     width:auto;
     height:auto;
-    text-align:center;
+    color:saddlebrown;
 
 }
 
+h1{
+
+    text-align:center;
+}
+
 .navigation-image{
+
 
     opacity: 0.8;
     height: 80px;
@@ -23,8 +29,8 @@
 
 .header-image{
 
-    height: 100px;
-    width: 120px;
+    height: 120px;
+    width: 140px;
     -webkit-box-shadow: 0 0 10px #ccc; 
     box-shadow: 0 0 10px #ccc;
     position:absolute;

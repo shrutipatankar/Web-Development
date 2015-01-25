@@ -1,0 +1,160 @@
+﻿
+/* This is a general css for the body of an html page*/
+body {
+
+    background-color: #7A7A99;
+    color:  ghostwhite;
+}
+
+/* This is a general css for the h1 header of an html page*/
+h1{
+    text-align: center;
+
+}
+
+/* This is a style applied to a wizard that appears at the top 
+    rightmost corner of the page*/
+.header-image{
+
+    /* defining height and width of the header image*/
+    height:150px ;
+    width: 130px;
+
+    /*image to float to the right*/
+    float:right;
+    
+}
+
+/* In my program, this class oc css "colortransit" is used 
+    for the square to camouflage with its surroundings 
+    (here the background color)*/
+.colortransit{
+
+    /*Position of this square is kept relative*/
+    position: relative;
+
+    /*text in the square is kept aligned at the center*/
+    text-align: center;
+
+    /* border-radius is used to make the square a little 
+        curved towards the corners*/
+    border-radius: 10px;
+
+    height: 100px;
+    width: 100px;
+
+    /*webkit-animation is used to name the animation and other 
+        properties such as the time frame for the animation*/
+    -webkit-animation: myanimation 5s;
+
+    /* how many times should the animation repeat is given by 
+        this property "-webkit-animation-iteration-count" */
+    -webkit-animation-iteration-count: infinite;
+
+
+}
+
+/* -webkit-keyframes is where animation is defined
+    In my program, for this class of div, I have 
+    changed the color of my square from one color to
+    the color of my background of html page
+    Eventually, it gives a camouflaging effect */
+@-webkit-keyframes myanimation{
+
+    from{background: darkgrey;}
+    to{background: #7A7A99;}
+}
+
+
+/* Next, I have tried to rotate a div called rotatetransi
+    This actually rotates my square in 360 degrees rotation*/
+.rotatetransit{
+
+    /* general properties of my div*/
+    color:navajowhite;
+    text-align: center;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: darkgrey;
+
+    /*name and time frame of my webkit animation for 
+        rotating square*/
+    -webkit-animation: spinmysquare 4s;
+
+    /*iteration-count of webkit animation provides the
+        number of times the animation should repeat itself*/
+    -webkit-animation-iteration-count: infinite;
+
+
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinmysquare {
+		  from { -webkit-transform: rotate(0deg); }
+		  to { -webkit-transform: rotate(360deg); }
+		}
+
+.moveme{
+    
+    position: relative;
+    -webkit-animation: myheader 5s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    height: 150px;
+    width: 500px;
+}
+
+
+@-webkit-keyframes myheader {
+    0%   { left:200px; top:0px;}
+    10%  { left:200px; top:10px;}
+    20%  { left:200px; top:20px;}
+    30%  { left:200px; top:30px;}
+    40%  { left:200px; top:40px;}
+    50%  { left:200px; top:50px;}
+    60%  { left:200px; top:40px;}
+    70%  { left:200px; top:30px;}
+    80%  { left:200px; top:20px;}
+    90%  { left:200px; top:10px;}
+    100% { left:200px; top:0px;}
+    }
+
+.rotatenmove{
+    position: relative;
+    color:navajowhite;
+    text-align: center;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: darkgrey;
+    -webkit-animation: rotateandmove 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotateandmove{
+
+    0%   { -webkit-transform: rotate(0deg);   left:20px; top:10px;}
+    100%  { -webkit-transform: rotate(360deg);  left:800px; top:10px;}
+
+
+}
+
+.cauldron{
+
+    height: 100px;
+    width: 100px;
+    position: relative;
+    -webkit-animation: mycauldron 5s;
+    -webkit-animation-timing-function: linear;
+
+
+}
+
+@-webkit-keyframes mycauldron{
+    0%   {left:0px; top:0px;}
+    25%  { left:1000px; top:0px;}
+    50%  { left: 1000px; top:-110px;}
+    100%  { left:1000px; top:-270px;} 
+}
