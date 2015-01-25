@@ -1,0 +1,165 @@
+﻿body {
+    
+
+}
+
+.top-gradient{
+
+    color:white;
+    margin: 10px 10px;
+    padding: 10px;
+    float:left;
+    height:150px;
+    width: 180px;
+    background: linear-gradient(to top, #66ccff, #000000);
+
+
+
+}
+
+.bottom-gradient{
+
+    color:white;
+    margin: 10px 10px;
+    padding: 10px;
+    float:left;
+    height:150px;
+    width: 180px;
+    background: linear-gradient(to bottom, #66ccff, #000000);
+
+
+
+}
+
+.left-gradient{
+
+    color:white;
+    margin: 10px 10px;
+    padding: 10px;
+    float:left;
+    height:150px;
+    width: 180px;
+    background: linear-gradient(to left, #66ccff, #000000);
+
+
+
+}
+
+.right-gradient{
+
+    color:white;
+    margin: 10px 10px;
+    padding: 10px;
+    float:left;
+    height:150px;
+    width: 180px;
+    background: linear-gradient(to right, #66ccff, #000000);
+}
+
+.radial-gradient{
+
+    color:white;
+    margin: 10px 10px;
+    padding: 10px;
+    float:left;
+    height:150px;
+    width: 180px;
+    background: radial-gradient(#66ccff, #000000);
+}
+
+.circle {
+			border-radius: 50%;
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+@-webkit-keyframes spin {
+		  from { -webkit-transform: rotate(0deg); }
+		  to { -webkit-transform: rotate(360deg); }
+		}
+
+.sparkling-circle-3seconds{
+
+    float:left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name:spin;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+
+.sparkling-circle-4seconds{
+     
+    float:left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name:spin;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+
+
+.sparkling-circle-5seconds{
+
+    float:left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name:spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+
+
+.sparkling-circle-easin{
+
+    float:left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name:spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+
+}
+
+.sparkling-circle-easeout{
+
+    float:left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name:spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+
+}
+
+.sparkling-circle-easeinout{
+
+    float:left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name:spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+
+}
