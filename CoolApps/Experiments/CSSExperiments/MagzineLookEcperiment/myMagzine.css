@@ -1,0 +1,43 @@
+﻿body {
+
+    font-family: 'Comic Sans MS';
+
+}
+
+h3{
+    -webkit-column-span: all;
+    position: relative;
+}
+
+.mymagzine{
+   
+    background-color: #dbd8d8;
+    height: auto;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    -webkit-column-rule: 1px ridge black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    width: 98%;
+}
+
+.magzineHeaderImage{
+
+    width: 98%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    height: 400px;
+    box-shadow: #c6abab 10px  10px inset;
+}
+
+.myarticle{
+    float: left;
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+}

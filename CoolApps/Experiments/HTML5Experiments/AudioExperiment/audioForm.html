@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My HTML Audio Experiment</title>
+    <link rel="stylesheet" type="text/css" href="Audio.css" />
+</head>
+<body>
+
+    <h2> Interactive Form that provides Spanish instructions</h2>
+    <hr />
+    <h3>Si desea instrucciones en Espanol, por favor, haga clic en el boton junto al campo</h3>
+    <h4>Name: </h4>
+    <input type="text" size="20" required/>
+    <audio controls class="myaudio">
+        <source src="nombre.mp3" type="audio/mp3">
+    </audio>
+    <br />
+    <h4>Age: </h4>
+    <input type="number" size="3" required />
+    <audio controls>
+        <source src="edad.mp3" type="audio/mp3">
+    </audio>
+    <br />
+    <h4>Profession: </h4>
+    <input type="text" size="20" required />
+    <audio controls>
+        <source src="profesion.mp3" type="audio/mp3">
+    </audio>
+    <br />
+    <div>
+        <h4>Hobbies: </h4>
+        <audio controls>
+            <source src="pasatiempos.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <textarea rows="10" cols="50" required> </textarea>
+    <br />
+    <br />
+    <input type="button" value="Submit" class="mybutton" />
+
+</body>
+</html>

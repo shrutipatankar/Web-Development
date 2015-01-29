@@ -38,3 +38,21 @@ h1{
     right: 70px;
 
 }
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.notepad{
+
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #FFCC99;
+    font-family: 'Comic Sans MS';
+    background-color: saddlebrown;
+    height: 400px;
+    width: 300px;
+
+
+}
