@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My drop down menu</title>
+    <link rel="stylesheet" type="text/css" href="dropdownstyle.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            
+            $(".Dances").mouseenter(function () {
+
+                $(this).find('.typeOfDance').css('visibility', 'visible');
+            });
+
+            $(".Dances").mouseleave(function () {
+
+                $(this).find('.typeOfDance').css('visibility', 'hidden');
+            });
+
+            $(".typeOfDance").mousedown(function () {
+                
+               
+               
+
+            });
+
+        });
+    </script>
+
+
+
+</head>
+<body>
+    <header>
+        <h2>My Drop down menu Experiment using jQuery</h2>
+    </header>
+        <div class="header-menu">
+            <ul>
+                <li class="Dances">
+                    <a href="#"> Indian Classical</a>
+                    <ul class="typeOfDance">
+                        <li class="subtype"><a href="#">BharatNatyam</a> </li>
+                        <li class="subtype"><a href="#">Kathakali</a> </li>
+                    </ul>
+                </li>
+                <li class="Dances">
+                    <a href="#"> Latin American</a>
+                    <ul class="typeOfDance">
+                        <li class="subtype"><a href="#">Danza de la Lune</a> </li>
+                        <li class="subtype"><a href="#">Argentine Tango</a> </li>
+                    </ul>
+                </li>
+                <li class="Dances">
+                    <a href="#"> Greek Dances</a>
+                    <ul class="typeOfDance">
+                        <li class="subtype"><a href="#">Kalamatianos</a> </li>
+                        <li class="subtype"><a href="#">Sirtaki</a> </li>
+                    </ul>
+                </li>
+                <li class="Dances">
+                    <a href="#"> Modern Dances</a>
+                    <ul class="typeOfDance">
+                        <li class="subtype"><a href="#">Bollywood Dancing</a> </li>
+                        <li class="subtype"><a href="#">Hiphop</a> </li>
+                    </ul>
+                </li>
+                <li class="Dances">
+                    <a href="#">Italian Dances</a>
+                    <ul class="typeOfDance">
+                        <li class="subtype"><a href="#">Tarantella </a> </li>
+                        <li class="subtype"><a href="#">Ballet</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <iframe>
+
+
+    </iframe>
+
+</body>
+</html>

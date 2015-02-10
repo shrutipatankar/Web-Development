@@ -1,0 +1,14 @@
+﻿HTML5Experiments/Documentation/audioLEarn.html WEEK1:Audio Tags in HTML 5
+HTML5Experiments/Documentation/editableLearn.html WEEK1:ContentEditable tag in HTML5
+CSSExperiments/Documentation/gradient.html WEEK1: Gradient in CSS
+CSSExperiments/Documentation/webkit.html   WEEK1: Webkit in CSS
+
+HTML5Experiments/HTML5Features/MyHTML5Page.html WEEK2: HTML5 Features including page navigation
+HTML5Experiments/iFrameAndTabs/SarpaMitra.html  WEEK2: Tabbed Interface and iFrame implementation
+CSSExperiments/CSSResponsivedesign/MyResponsiveDesign.html WEEK2: CSS Responsive Design
+CSSExperiments/MagzineLookExperiment/MagzineLook.html WEEK2: Magzine Look Experiment
+
+jQueryExperiments/DropDownMenuExperiment/MyDropDownMenu.html WEEK3: DropDown Menu using jQuery
+jQueryExperiments/JQueryEffectsExperiment/myDancingChoice.html WEEK3: JQuery Effects Experiment  
+jQueryExperiments/JQueryFilterExperiment/JQueryFilter.html WEEK3: JQuery Filter Experiment  
+JavaScriptExperiment/DynamicRowAddExperiment/Enrollme.html WEEK3: JavaScript Experiment to add rows dynamically 

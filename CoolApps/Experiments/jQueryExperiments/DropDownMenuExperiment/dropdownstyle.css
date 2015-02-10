@@ -1,0 +1,63 @@
+﻿body {
+
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    align-items:center;
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.header-menu  li{
+
+    float: left;
+    border-color: orange;
+    border-radius: 10px;
+    background-color: darkorange;
+    color: mintcream;
+    list-style: none;
+    align-content: center;
+    text-decoration: none;
+    width: 200px;
+    height: 30px;
+    list-style: none;
+
+}
+
+.subtype a{
+
+
+    color: mintcream;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+.typeOfDance{
+
+    padding: 5px;
+    margin: 5px;
+    visibility: hidden;
+
+}
+
+.Dances{
+
+    Visibility: visible;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+iframe{
+
+    border-color: #edb959;
+    border-radius: 20px;
+    height: 500px;
+    width: 1000px;
+}

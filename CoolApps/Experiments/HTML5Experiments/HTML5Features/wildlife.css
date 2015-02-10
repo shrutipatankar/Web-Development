@@ -1,0 +1,93 @@
+﻿body {
+
+    background-color: #3a7a43;
+    color: white;
+    font-family: 'Comic Sans MS';
+
+}
+header{
+
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #2d4f31;
+
+
+}
+article{
+
+    margin: 20px;
+    text-align: left;
+
+
+
+}
+
+.div-header{
+    
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #2d4f31;
+    text-align:center;
+
+
+}
+.mydivision{
+    width: 100%;
+    float: left;
+}
+a:link {
+    color: white;
+    border-color: white;
+    border-style:solid;
+    border-width: 2px;
+    padding: 15px;
+    margin: 15px;
+
+}
+
+
+a:visited {
+    color: #e6dbdb;
+}
+
+a:hover {
+    color: #00FF00;
+}
+
+a:active {
+    color: white;
+    
+}
+
+nav {
+
+
+    background-color: #2d4f31;
+    padding: 10px;
+    margin: 10px;
+}
+figure{
+        float: left;
+
+}
+section{
+
+    margin: 15px;
+    padding: 50px;
+}
+.myimage{
+
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+
+}
+p{
+    text-align: justify;
+
+}

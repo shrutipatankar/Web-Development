@@ -1,4 +1,7 @@
 ﻿body {
+        
+
+        
 
     font-family: 'Comic Sans MS';
 
@@ -40,4 +43,22 @@ h3{
 
 h1{
     text-align: center;
+}
+
+.mydivision{
+    width: 100%;
+    float: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #d1cccc;
+    text-align:center;
+    padding:3px;
+    margin: 5px;
+
+
 }

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Dance Class Enrollment Form</title>
+    <link rel="stylesheet" type="text/css" href="danceform.css" />
+    <script src="dance.js"></script>
+</head>
+<body>
+    <header>
+        <h1> My Dance Class Enrollment Form with dynamic input fields!</h1>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study the javascript language uses. This experiment uses javascript langauge 
+                to dynamically add rows in a table based on user input. 
+                For Example, the user wants to enroll in three different types of dancing lessons and chooses to
+                enter his own suitable days on which he prefers, then he can choose to enter these details by clicking
+                "Add Dance" button provided. In this way, user can enter any number of rows that he wants. I saw this 
+                as a common requirement which may be useful in many cases and wanted to learn to do this.
+            </p>
+        </div>
+        <br />
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            var table = document.getElementById("danceTable");<br />
+            var rowCount = table.rows.length;<br />
+            var row = table.insertRow(rowCount);<br />
+            <br />
+            var cellDay = row.insertCell(1);<br />
+            var element2 = document.createElement("input");<br />
+            element2.type = "text";<br />
+            element2.name = "textbox[]";<br />
+            cellDay.appendChild(element2);<br />
+        </div>
+        <br />
+        <div class="div-header">
+            Implementation
+        </div>
+        <div class="myform">
+            
+            <label>
+                Name: <input class="smallLabels" type="text" /> <br />
+            </label>
+            <label>
+                Contact Number: <input class="longLabels" type="number" /> <br />
+            </label>
+            <label>
+                Age: &nbsp; &nbsp;<input class="smallLabels" type="number" /><br />
+            </label>
+            <label>
+                BirthDate: <input type="date" class="dateLabels" /><br />
+            </label>
+            <label>
+                Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Male" />Male
+                <input type="radio" name="gender" value="Female" />Female
+            </label>
+            <br />
+            <br />
+            Choose your dance:
+            <table id="danceTable">
+                <tr>
+                    <th>Type of Dance</th>
+                    <th>Enter preferred day of the week</th>
+                </tr>
+
+            </table>
+            <button onclick="addRow();">Add Dance</button>
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/JavaScriptExperiment/DynamicRowAddExperiment/danceform.css"
+               target="_blank"> CSS Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/JavaScriptExperiment/DynamicRowAddExperiment/Enrollme.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/JavaScriptExperiment/DynamicRowAddExperiment/dance.js"
+               target="_blank"> JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://www.w3schools.com/css/">w3schools</a>
+
+        </div>
+    </main>
+</body>
+</html>
