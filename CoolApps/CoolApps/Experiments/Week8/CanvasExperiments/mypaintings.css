@@ -1,0 +1,74 @@
+﻿body {
+
+      text-align: center;
+    font-family: 'Comic Sans MS';
+
+}
+
+button{
+
+    width: 10%;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: #c4b9b9;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+}
+
+
+div{
+
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+#myCanvas{
+
+    width: 60%; 
+    height: 200px; 
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c4b9b9;
+
+}
+
+.mydivision{
+    width: 95%;
+    float: left;
+    text-align: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #c4b9b9;
+    color: black;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+}
+
+.mycanvas{
+
+    border-width: 2px;
+    border-color: #c4b9b9;
+    border-radius: 5px;
+    border-style: ridge;
+    width: 90%;
+    height: 250px;
+}
+
+
+
+.mydrawing-platforms{
+
+    float: left;
+    width: 100%;
+
+
+}

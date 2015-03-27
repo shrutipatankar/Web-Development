@@ -1,0 +1,127 @@
+﻿<!--
+       AUTHOR:     SHRUTI SANJAY PATANKAR
+       FILE TYPE:  HTML
+       DISCLAIMER: THIS CODE HAS BEEN DONE AS A PART OF WEB DEVELOPMENT LEARNING COURSE
+       TERM:       SPRING 2015
+       PROFESSOR:  RICHARD RASALA
+       UNIVERSITY: NORTHEASTERN UNIVERSITY, BOSTON
+       ALL THE IMAGES USED IN THIS EXPERIMENT RESIDE UNDER MYIMAGES FOLDER OF THE PROJECT
+-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My WebKit Image Experiment</title>
+    <link rel="stylesheet" href="../../css/Week1/webkitStyle.css" type="text/css" />
+</head>
+<body>
+    <h1>Webkit Experiment </h1>
+
+    <div>
+        <div class="div-header"> About the experiment </div>
+        <p>
+            This experiment is to study the animation effect that can be applied to images
+            using CSS webkit. Various effects such as rotating, color change and moving of
+            images and shapes can be viewed in this experiment
+        </p>
+
+    </div>
+    <br />
+    <div>
+
+        <div class="div-header">
+            Code snippet
+        </div>
+
+        <h4> Key Frames for color change</h4>
+        @-webkit-keyframes myanimation{ <br />
+
+        from{background: darkgrey;}    <br />
+        to{background: #7A7A99;}       <br />
+        }                              <br />
+
+        }<br />
+
+        <h4> Key Frames for rotation effect</h4>
+
+        @-webkit-keyframes spinmysquare {           <br />
+        from { -webkit-transform: rotate(0deg); }   <br />
+        to { -webkit-transform: rotate(360deg); }   <br />
+        }<br />
+
+        <h4> Key Frames for moving and rotating  effect</h4>
+
+        @-webkit-keyframes rotateandmove{ <br />
+
+        0%   { -webkit-transform: rotate(0deg);   left:20px; top:10px;} <br />
+        100%  { -webkit-transform: rotate(360deg);  left:800px; top:10px;}<br />
+
+    </div>
+    <br />
+
+    <div>
+        <div class="div-header">
+            Implementation
+        </div>
+        <br />
+        <div class="mainCode">
+            <img src="../../../myimages/merlin.png" class="header-image" />
+            <!--THIS DIV KEEPS FLIPPING UP AND DOWN. 
+                REFER CSS WEBKITSTYLE.CSS-->
+            <div class="moveme">
+                <h1> WebKit Image Experiment</h1>
+            </div>
+            <br />
+            <hr />
+
+            <div class="parent">
+                <h3> Camouflage my square </h3>
+                <!--THIS DIV MEARGES ITSELF INTO THE BACKGROUND COLOR AND DISAPPEARS.
+                    REFER CSS WEBKITSTYLE.CSS-->
+                <div class="colortransit">
+                    This is my square that camouflages with its surroundings
+                </div>
+                <!--THIS CAULDRON IMAGE MOVES FROM ITS POSITION TOWARDS THE WIZARD AT
+                    THE TOP RIGHT CORNER OF THE SCREEN.
+                    REFER CSS WEBKITSTYLE.CSS-->
+                <img src="../../../myimages/cauldron.png" class="cauldron" />
+            </div>
+
+            <hr />
+
+            <h3> Rotate My Square </h3>
+            <!--THIS DIV ROTATES ITSELF IN 360 DEGREES.
+            REFER CSS WEBKITSTYLE.CSS-->
+            <div class="rotatetransit">This is my square that rotates</div>
+            <hr />
+
+
+            <h3> Flip and Rotate My Square </h3>
+            <!--THIS DIV ROTATES IN 360 DEGREES AND PARALLELY MOVES TOWARDS THE RIGHT.
+            REFER CSS WEBKITSTYLE.CSS-->
+            <div class="rotatenmove">This is my square that flips and rotates</div>
+            <hr />
+        </div>
+    </div>
+    <div>
+        <div class="div-header">
+            Source Code
+        </div>
+        <a href="../../fileview/Default.aspx?~/Experiments/Week1/webkitLearn.html"
+           target="_blank">View Html Source</a>
+        <br />
+        <a href="../../fileview/Default.aspx?~/css/Week1/webkitStyle.css"
+           target="_blank">View Css Source</a>
+    </div>
+    <br />
+
+    <div>
+        <div class="div-header">
+            Link to references
+        </div>
+        <a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">W3 Schools Animations</a>
+    </div>
+    <br />
+</body>
+</html>

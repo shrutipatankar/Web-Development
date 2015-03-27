@@ -1,0 +1,3 @@
+﻿JQueryEffectsExperiment/myDancingChoice.html  WEEK4: JQuery Effects Experiment  
+JQueryFilterExperiment/JQueryFilter.html WEEK4:JQuery Filter Experiment  
+DynamicRowAddExperiment/Enrollme.html  WEEK4: JavaScript Experiment to add rows dynamically 

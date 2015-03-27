@@ -1,0 +1,260 @@
+﻿/*        
+    AUTHOR:     SHRUTI SANJAY PATANKAR
+    FILE TYPE:  CSS
+    DISCLAIMER: THIS CODE HAS BEEN DONE AS A PART OF WEB DEVELOPMENT LEARNING COURSE
+    TERM:       SPRING 2015
+    PROFESSOR:  RICHARD RASALA
+    UNIVERSITY: NORTHEASTERN UNIVERSITY, BOSTON
+
+*/
+
+/*THIS CSS WILL BE APPLIED TO THE BODY OF HTML PAGE THAT REFERS THIS CSS*/
+body {
+    background-color: #7A7A99;
+    color: #E8E8E8;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE H1 TAG OF HTML PAGE THAT REFERS THIS CSS*/
+h1 {
+    text-align: center;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE ANCHOR TAG OF HTML PAGE THAT REFERS THIS CSS*/
+a {
+    color: white;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE CLASS OF TAGS CALLED "div-header" OF HTML PAGE THAT 
+    REFERS THIS CSS*/
+.div-header {
+    height: 30px;
+    width: auto;
+    background-color: darkgrey;
+    color: #7A7A99;
+    text-align: left;
+    background: linear-gradient(to left, #7A7A99, #D1D1D1);
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE CLASS OF TAGS CALLED "mainCode" OF HTML PAGE THAT REFERS THIS CSS*/
+.mainCode {
+    width: 85%;
+    height: auto;
+    padding: 2%;
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    overflow: auto;
+}
+
+/*  top-gradient: THIS CLASS IS DEFINED FOR THE ELEMENTS THAT ARE
+    EXPECTED TO HAVE A LINEAR GRADIENT MOVING TOWARDS THE TOP
+
+    NOTE:
+    HERE THE GRADIENT HAS BEEN SET FROM BOTTOM TOWARDS THE TOP
+    This means that when the linear gradient property is provided
+    to a background, it will start from bottom with color "#66ccff" 
+    and towards the top it will have a gradient "#000000"
+*/
+.top-gradient {
+    color: white;
+    margin: 10px 10px;
+    padding: 10px;
+    float: left;
+    height: 150px;
+    width: 180px;
+    background: linear-gradient(to top, #66ccff, #000000);
+}
+
+/*  bottom-gradient: THIS CLASS IS DEFINED FOR THE ELEMENTS THAT ARE
+    EXPECTED TO HAVE A LINEAR GRADIENT MOVING TOWARDS THE BOTTOM
+
+    NOTE:
+    HERE THE GRADIENT HAS BEEN SET FROM TOP TOWARDS THE BOTTOM
+    This means that when the linear gradient property is provided
+    to a background, it will start from top with color "#66ccff" 
+    and towards the bottom it will have a gradient "#000000"
+*/
+.bottom-gradient {
+    color: white;
+    margin: 10px 10px;
+    padding: 10px;
+    float: left;
+    height: 150px;
+    width: 180px;
+    background: linear-gradient(to bottom, #66ccff, #000000);
+}
+
+
+/*  left-gradient: THIS CLASS IS DEFINED FOR THE ELEMENTS THAT ARE
+    EXPECTED TO HAVE A LINEAR GRADIENT MOVING TOWARDS THE LEFT
+
+    NOTE:
+    HERE THE GRADIENT HAS BEEN SET FROM RIGHT TOWARDS THE LEFT
+    This means that when the linear gradient property is provided
+    to a background, it will start from right with color "#66ccff" 
+    and towards the left it will have a gradient "#000000"
+*/
+.left-gradient {
+    color: white;
+    margin: 10px 10px;
+    padding: 10px;
+    float: left;
+    height: 150px;
+    width: 180px;
+    background: linear-gradient(to left, #66ccff, #000000);
+}
+/*  right-gradient: THIS CLASS IS DEFINED FOR THE ELEMENTS THAT ARE
+    EXPECTED TO HAVE A LINEAR GRADIENT MOVING TOWARDS THE RIGHT
+
+    NOTE:
+    HERE THE GRADIENT HAS BEEN SET FROM LEFT TOWARDS THE RIGHT
+    This means that when the linear gradient property is provided
+    to a background, it will start from left with color "#66ccff" 
+    and towards the right it will have a gradient "#000000"
+*/
+.right-gradient {
+    color: white;
+    margin: 10px 10px;
+    padding: 10px;
+    float: left;
+    height: 150px;
+    width: 180px;
+    background: linear-gradient(to right, #66ccff, #000000);
+}
+
+
+/*  radial-gradient: THIS CLASS IS DEFINED FOR THE ELEMENTS THAT ARE
+    EXPECTED TO HAVE A RADIAL GRADIENT MOVING OUTWARDS
+
+    NOTE:
+    HERE THE GRADIENT HAS BEEN SET FROM CENTER TOWARDS THE BORDER
+    OF THE CIRCLE
+
+    This means that when the radial gradient property is provided
+    to a background, it will start from center with color "#66ccff" 
+    and towards the border it will have a gradient "#000000" in a 
+    radial style
+*/
+.radial-gradient {
+    color: white;
+    margin: 10px 10px;
+    padding: 10px;
+    float: left;
+    height: 150px;
+    width: 180px;
+    background: radial-gradient(#66ccff, #000000);
+}
+
+
+/* THIS PARTICULAR CLASS HAS BEEN IMPLEMENTED AS A PART OF IMPLEMENTATION 
+    OF SPARKLING CIRCLE. THIS CLASS SPECIFICALLY MAKES ANY DIV A CIRCLE
+    BECAUSE OF ITS BORDER-RADIUS PROPERTY
+*/
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* THIS IS TO IMPLMENT SPINNING OF THE CIRCLE AS AN ANIMATION */
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+/* DIFFERENT EFFECTS HAVE BEEN GIVEN TO DIFFERENT CIRCLES:
+
+    sparkling-circle-3seconds: THE ROTATION OF CIRCLE IS ACHIEVED IN 3 SECONDS
+    sparkling-circle-4seconds: THE ROTATION OF CIRCLE IS ACHIEVED IN 4 SECONDS
+    sparkling-circle-5seconds: THE ROTATION OF CIRCLE IS ACHIEVED IN 5 SECONDS
+    
+    */
+.sparkling-circle-3seconds {
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.sparkling-circle-4seconds {
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+
+.sparkling-circle-5seconds {
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*  BY PROVIDING DIFFERENT TIMING FUNCTIONS AS WELL, DIFFERENT EFFECTS CAN BE ACHIEVED:
+
+    sparkling-circle-easin: CIRCLE WILL ROTATE IN 5 SECONDS WITH EASE-IN EFFECT
+    sparkling-circle-easeout: CIRCLE WILL ROTATE IN 5 SECONDS WITH EASE-OUT EFFECT
+    sparkling-circle-easeinout: CIRCLE WILL ROTATE IN 5 SECONDS WITH EASE-IN-OUT EFFECT
+*/
+.sparkling-circle-easin {
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+}
+
+
+
+.sparkling-circle-easeout {
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.sparkling-circle-easeinout {
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}

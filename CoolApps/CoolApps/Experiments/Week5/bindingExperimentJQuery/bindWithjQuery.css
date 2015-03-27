@@ -1,0 +1,58 @@
+﻿body{
+
+    background-color:#f3e09c;
+    color: #672b2b;
+}
+img{
+
+    height: 30%;
+    width: 30%;
+    border-radius: 4%;
+    border-width: 2px;
+    border-style:groove;
+    border-color:#672b2b;
+    
+    
+}
+
+div{
+
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.mydivision{
+    width: 95%;
+    float: left;
+    text-align: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #672b2b;
+    color: #f3e09c;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+
+
+}
+
+.mybutton{
+
+    background-color: #672b2b;
+    color: #f3e09c;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 2px 2px;
+    box-shadow: 20px 12px 2px #f3e09c;
+
+
+
+}

@@ -1,0 +1,86 @@
+﻿body {
+
+    font-family: 'Comic Sans MS';
+
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.header-menu  li{
+
+    float: left;
+    border-color: orange;
+    text-align: center;
+    background-color: #a08fbb;
+    color: white;
+    list-style: none;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 30px;
+    list-style: none;
+
+}
+
+.subtype a{
+
+  color: mintcream;
+
+
+}
+
+
+.typeOfDance{
+
+    padding: 15px 15px;
+    visibility: hidden;
+
+}
+
+.typeOfDance li{
+
+
+    border-color: white;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.Dances{
+
+    Visibility: visible;
+    margin: 2px 2px 2px 5px;
+    text-decoration: none;
+
+}
+
+div{
+
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.mydivision{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #a08fbb;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+    color: white;
+
+
+}

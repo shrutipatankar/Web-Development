@@ -1,0 +1,108 @@
+﻿/*        
+    AUTHOR:     SHRUTI SANJAY PATANKAR
+    FILE TYPE:  CSS
+    DISCLAIMER: THIS CODE HAS BEEN DONE AS A PART OF WEB DEVELOPMENT LEARNING COURSE
+    TERM:       SPRING 2015
+    PROFESSOR:  RICHARD RASALA
+    UNIVERSITY: NORTHEASTERN UNIVERSITY, BOSTON
+
+*/
+
+/*THIS CSS WILL BE APPLIED TO THE BODY OF HTML PAGE THAT REFERS THIS CSS*/
+body {
+
+    background-color: #7A7A99;
+    color:  #E8E8E8;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE INPUT TAGS OF HTML PAGE THAT REFERS THIS CSS*/
+input {
+
+    height: 30px;
+    width: 200px;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE AUDIO TAGS OF HTML5 PAGE THAT REFERS THIS CSS*/
+audio{
+
+    height: 30px;
+    width: 40px;
+    background-color: #BCBCCC;
+
+}
+
+
+/*THIS CSS WILL BE APPLIED TO THE BUTTON WITH CLASS NAME "mybutton" OF HTML PAGE THAT REFERS THIS CSS
+    THIS HAS BEEN USED IN AUDIO FORM EXPERIMENT WEEK 1
+    NOTE: FOR APPLYING CSS TO A SPECIFIC ID WE USE "#"  IN CSS INSTEAD OF "."*/
+.mybutton{
+
+    border-radius: 10px;
+    font-family: 'Comic Sans MS';
+    color: #E8E8E8;
+    background-color: #131314;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE H1 TAG OF HTML PAGE THAT REFERS THIS CSS*/
+h1{
+    
+    text-align: center;
+
+}
+
+/*THIS CSS WILL BE APPLIED TO THE ANCHOR TAG OF HTML PAGE THAT REFERS THIS CSS*/
+a{
+
+    color: white;
+}
+
+/*THIS CSS WILL BE APPLIED TO THE CLASS OF TAGS CALLED "div-header" OF HTML PAGE THAT 
+    REFERS THIS CSS*/
+.div-header{
+
+    height: 30px;
+    width: auto;
+    background-color: darkgrey;
+    color:#7A7A99;
+    text-align: left;
+    background: linear-gradient(to left, #7A7A99, #D1D1D1);
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+
+
+}
+
+/*THIS CSS WILL BE APPLIED TO THE CLASS OF TAGS CALLED "mainCode" OF HTML PAGE THAT REFERS THIS CSS*/
+.mainCode{
+
+    width: 85%;
+    height: auto;
+    padding: 2%;
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+/* IMAGE CSS WILL APPLY TO ALL THE IMAGES IN THE HTML PAGE THAT REFERS TO THIS CSS*/
+
+img{
+
+    width: 20%;
+    height: 30%;
+
+}
+
+/* THIS CSS HAS BEEN SPECIFICALLY USED FOR EXPERIMENT2 OF WEEK1 WHICH IS A CONTENT EDITABLE 
+    NOTEPAD CONCEPT*/
+.notepad{
+
+    height: 200px;
+    width: 50%;
+    color: black;
+    background-color: #E8E8E8;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+
+}

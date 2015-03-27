@@ -1,5 +1,0 @@
-﻿HTML5Experiments/HTML5Features/MyHTML5Page.html WEEK2: HTML5 Features including page navigation
-HTML5Experiments/iFrameAndTabs/SarpaMitra.html  WEEK2: Tabbed Interface and iFrame implementation
-CSSExperiments/CSSResponsivedesign/MyResponsiveDesign.html WEEK2: CSS Responsive Design
-CSSExperiments/MagzineLookExperiment/MagzineLook.html WEEK2: Magzine Look Experiment
-jQueryExperiments/DropDownMenuExperiment/MyDropDownMenu.html WEEK3: DropDown Menu using jQuery

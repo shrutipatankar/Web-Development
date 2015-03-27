@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sarpa Mitra</title>
+    <link rel="stylesheet" type="text/css" href="snakestyle.css" />
+    <script>
+        function iframeSetSource(url) {
+
+            document.getElementById('myiframe').src = url;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1> My iFrame and tabs implementation</h1>
+        
+    </header>
+    <div>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to demonstrate implementation of iFrames and tabbed interface using 
+                li tag. In this experiment, I have created 4-5 forms, each gets displayed in the iframe on selection.
+                Default being home page. This experiment also provides division of the form into two sections next to 
+                each other. On left hand side I have provided a form to use html5 input tags. On right hand side
+                resides the images for the snakes and the points on how to identify them etc.
+            </p>
+        </div>
+        <br />
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            
+            <br />
+            &lt;li&gt;
+            &lt;a onclick=&quot;iframeSetSource(&apos;Home.html&apos;);&quot;&gt; Home &lt;/a&gt;
+            &lt;/li&gt;
+
+            <br />
+        </div>
+        <br />
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <h2>
+                We are friends with the snakes! And with you too..
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a onclick="iframeSetSource('Home.html');"> Home </a>
+                        <a onclick="iframeSetSource('KingCobra.html');"> King Cobra </a>
+                        <a onclick="iframeSetSource('CommonKrait.html');"> Common Krait </a>
+                        <a onclick="iframeSetSource('RusselViper.html');"> Russel Viper </a>
+                        <a onclick="iframeSetSource('SawScaledViper.html');"> Saw Scaled Viper </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <iframe id="myiframe" src="Home.html"></iframe>
+
+            </section>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/HTML5Experiments/iFrameAndTabs/SarpaMitra.html"
+               target="_blank">View Source code</a>
+        </div>
+        <br />
+
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://www.w3schools.com/tags/tag_iframe.asp" target="_blank">w3schools</a>
+            <a href="http://ngm.nationalgeographic.com/" target="_blank">National Geographic</a>
+            <a href="http://indiansnakes.org/" target="_blank"> Indian Snakes</a>
+         </div>
+    </div>
+
+</body>
+</html>

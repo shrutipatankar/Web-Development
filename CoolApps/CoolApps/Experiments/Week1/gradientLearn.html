@@ -1,0 +1,121 @@
+﻿<!--
+       AUTHOR:     SHRUTI SANJAY PATANKAR
+       FILE TYPE:  HTML
+       DISCLAIMER: THIS CODE HAS BEEN DONE AS A PART OF WEB DEVELOPMENT LEARNING COURSE
+       TERM:       SPRING 2015
+       PROFESSOR:  RICHARD RASALA
+       UNIVERSITY: NORTHEASTERN UNIVERSITY, BOSTON
+       ALL THE IMAGES USED IN THIS EXPERIMENT RESIDE UNDER MYIMAGES FOLDER OF THE PROJECT
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Gradient Experiment</title>
+    <link rel="stylesheet" type="text/css" href="../../css/Week1/gradientStyle.css" />
+</head>
+<body>
+
+    <h1>Gradient Experiment </h1>
+
+    <div>
+        <div class="div-header"> About the experiment </div>
+        <p>
+            This experiment is to view the different types of gradients and also eventually view the effect of
+            gradients in terms of a sparkling circle.
+        </p>
+
+    </div>
+    <br />
+    <div>
+        <div class="div-header">
+            Code snippet
+        </div>
+        .sparkling-circle{ <br />
+        background-image: -webkit-radial-gradient(40px 40px, circle cover,#66ccff, #000000);<br />
+        -webkit-animation-name:spin;<br />
+        -webkit-animation-duration: 3s;<br />
+        -webkit-animation-iteration-count: infinite;<br />
+        -webkit-animation-timing-function: linear;<br />
+        }<br />
+    </div>
+    <br />
+
+    <div>
+        <div class="div-header">
+            Implementation
+        </div>
+        <br />
+        <div class="mainCode">
+            <h1> Welcome to Gradient Experiment </h1>
+
+            <hr />
+
+
+            <h3> Linear Gradient Style</h3>
+
+            <!--These divs are for displaying linear gradients-->
+            <div class="top-gradient"> This is a top gradient </div>
+            <div class="bottom-gradient"> This is a bottom gradient</div>
+            <div class="left-gradient">This is a left gradient</div>
+            <div class="right-gradient"> This is a right gradient</div>
+
+            <!--Had to introduce breaks-->
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <hr />
+
+            <!--This div is to display a radial gradient-->
+            <h3> Radial Gradient Style</h3>
+            <div class="radial-gradient"> This is a radial gradient </div>
+
+            <!--Had to introduce breaks-->
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <hr />
+
+            <!--These divs are for displaying sparkling circle effects with each 3 seconds, 4 seconds
+                and 5 seconds animation time-->
+            <h3>Sparkling Circles</h3>
+            <div class="sparkling-circle-3seconds"></div>
+            <div class="sparkling-circle-4seconds"></div>
+            <div class="sparkling-circle-5seconds"></div>
+
+            <!--Had to introduce breaks-->
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <hr />
+
+            <!--These divs are for displaying sparkling circle effects with each ease-in effect, ease-out
+                effect and ease-in-out effect in their animations-->
+            <h3>Sparkling Circles Ease in Ease Out Effect</h3>
+            <div class="sparkling-circle-easin"></div>
+            <div class="sparkling-circle-easeout"></div>
+            <div class="sparkling-circle-easeinout"></div>
+
+        </div>
+    </div>
+    <div>
+        <div class="div-header">
+            Source Code
+        </div>
+        <a href="../../fileview/Default.aspx?~/css/Week1/gradientStyle.css"
+           target="_blank">View CSS Source</a>
+        <br />
+        <a href="../../fileview/Default.aspx?~/Experiments/Week1/gradientLearn.html"
+           target="_blank">View HTML Source</a>
+    </div>
+    <br />
+
+    <div>
+        <div class="div-header">
+            Link to references
+
+        </div>
+        <a href="http://www.w3schools.com/css/css3_gradients.asp" target="_blank">w3schools</a>
+        <br />
+        <a href="http://davidwalsh.name/css-circles" target="_blank">davidwalsh</a>
+
+    </div>
+
+
+
+
+</body>
+</html>

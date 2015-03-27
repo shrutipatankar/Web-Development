@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JQuery Selectors Experiment</title>
+    <link rel="stylesheet" href="selectors.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="selectors.js"></script>
+</head>
+<body>
+    <header>
+        <h2>JQuery Selectors Experiment</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study the selectors of jQuery in an HTML Document. I have tried to learn
+                how different DOM elements can be accessed in jQuery and performed some action on most DOM
+                Elements using jquery Selectors.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+
+
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+            $(&quot;#hideall&quot;).click(function () { <br />
+            $(&quot;.elements &gt; *&quot;).fadeOut();<br />
+            });
+            <hr />
+            <h5>Click on each of the buttons below</h5>
+            <div>
+                <div class="mybuttonpanel">
+                    <button id="hideall">Hide All</button>
+                    <button id="showall">Show All</button>
+                    <button id="hideme">Hide Me!</button>
+                    <button id="appendParaGraph">Append to the Paragraphs</button>
+                    <button id="hideHref">Fade out the href tag!</button>
+                    <button id="changeOddChildren">Change odd rows of table!</button>
+                    <button id="changeEvenChildren">Change even rows of table!</button>
+
+                </div>
+                <br />
+                <br />
+                <div class="elements">
+                    <h5>(This text is in h5 tag)Employee Database:</h5>
+                    <br />
+                    <table id="myemp_table">
+                        <thead>
+                            <tr>
+                                <td>Planet</td>
+                                <td>Color</td>
+                                <td>Position</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mercury</td>
+                                <td>Blue</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Venus</td>
+                                <td>Orange</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Earth</td>
+                                <td>Blue and Green</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Mars</td>
+                                <td>Red</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Jupiter</td>
+                                <td>White</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturn</td>
+                                <td>Red</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Uranus</td>
+                                <td>Yellow</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Neptune</td>
+                                <td>Violet</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Pluto</td>
+                                <td>Orange</td>
+                                <td>9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Ever since the discovery of Pluto in 1930, kids grew up learning about the nine planets of our solar system. That all changed starting in the late 1990s, when astronomers began to argue about whether Pluto was a planet. In a highly controversial decision, the International Astronomical Union ultimately decided in 2006 to call Pluto a “dwarf planet,” reducing the list of “real planets” in our solar system to eight. But many kids (and adults) cling to the notion of nine planets.
+
+                        Regardless of your view, here’s the order of the eight larger planets, starting nearest the sun and working outward through the solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.
+                    </p>
+                    <a href="http://www.w3schools.com/css/">CSS Tutorial</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week5/jQuerySelectorsExperiment/selectors.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week5/jQuerySelectorsExperiment/jQuerySelectors.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week5/jQuerySelectorsExperiment/selectors.js"
+               target="_blank">JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://www.w3schools.com/jquery/jquery_selectors.asp">w3Schools.com</a>
+        </div>
+
+    </main>
+</body>
+</html>

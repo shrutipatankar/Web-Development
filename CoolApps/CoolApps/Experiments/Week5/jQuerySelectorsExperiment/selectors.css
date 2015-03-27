@@ -1,0 +1,108 @@
+﻿body {
+
+      text-align: center;
+    font-family: 'Comic Sans MS';
+
+}
+
+table{
+
+    width: 80%;
+    border-color: black;
+    border-width: 3px;
+    border-style: ridge;
+    border-collapse: collapse;
+    background-color: #dfd2d2;
+     
+}
+thead{
+    font-weight: bold;
+    margin: 2px 2px;
+    padding: 10px 10px 10px 10px;
+    height: 50px;
+    background-color: #c4b9b9;
+    
+}
+td,tr{
+    margin: 2px 2px;
+    padding: 10px 10px 10px 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: ridge;
+
+}
+
+tr:nth-child(even){
+
+    background-color: #f3eaea;
+}
+
+button{
+
+    width: 30%;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: #c4b9b9;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+}
+
+#searchString{
+
+    width: 60%;
+    height: 35px;
+    border-width: 2px;
+    border-color: #c4b9b9;
+    border-style: solid;
+    font-size: medium;
+    font-family: 'Comic Sans MS';
+}
+
+div{
+
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.mydivision{
+    width: 95%;
+    float: left;
+    text-align: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #c4b9b9;
+    color: black;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+
+
+}
+
+.elements{
+
+    border-color:#dfd2d2;
+    border-width: 3px;
+    border-style: solid;
+    width: 100%;
+}
+
+.mybuttonpanel{
+
+    width: 100%;
+}
+
+.mybuttonpanel button{
+    padding: 15px 15px;
+    margin: 10px 10px;
+    width: 100px;
+    height: 65px;
+}

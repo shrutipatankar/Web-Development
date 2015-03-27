@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Data Pull experiment</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="datapull.js"></script>
+    <link rel="stylesheet" type="text/css" href="datapull.css" />
+</head>
+<body>
+    <header>
+        <h2>
+            My ajax Experiment to pull data from IMDB server
+        </h2>
+    </header>
+    <hr />
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This is my first attempt to try an ajax call. I have created a UI to put in a name of a movie, I pull the
+                data from IMBD server. I have populated the fields like year of the movie and its details. A reset 
+                button has also been provided. The movie that matches the entered string is fetched from the server in 
+                JSON format. This data is then added through jQuery to the fields respectively.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            $.getJSON(url, function (r) {
+            response = r;
+            console.log(response);
+            $(&quot;#title&quot;).val(response.Title);
+            $(&quot;#year&quot;).val(response.Year);
+            $(&quot;#plot&quot;).val(response.Plot);
+
+            });
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br /><br /><br />
+
+            <div class="input">
+                <input type="text" id="movie_name" />
+                <button id="getDetails">Go!</button>
+                <button id="clearAll"> Reset </button>
+            </div>
+            <div class="titlediv">
+                <header>
+                    <h3>
+                        Movie Details
+                    </h3>
+                </header>
+                <hr />
+                Title:
+                <input id="title" type="text" />
+                <br />
+
+                Year:
+                <input id="year" type="text" />
+                <br />
+
+                Plot:<br />
+                <textarea id="plot" rows="5" cols="72"></textarea>
+
+                </div>
+
+            </div>
+            <div class="mydivision">
+                <div class="div-header">
+                    Source Code
+                </div>
+                <a href="../../../fileview/Default.aspx?~/Experiments/AJAXExperiments/DataPullExaperiment/datapull.css"
+                   target="_blank">CSS Source code</a><br />
+                <a href="../../../fileview/Default.aspx?~/Experiments/AJAXExperiments/DataPullExaperiment/DattaPull.html"
+                   target="_blank">HTML Source code</a><br />
+                <a href="../../../fileview/Default.aspx?~/Experiments/AJAXExperiments/DataPullExaperiment/datapull.js"
+                   target="_blank">JavaScript Source code</a><br />
+            </div>
+            <div class="mydivision">
+                <div class="div-header">
+                    Link to references
+
+                </div>
+                <a href="http://learn.jquery.com/ajax/">Learn ajax </a>
+
+            </div>
+</main>
+   
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My XML Parsing Experiment</title>
+    <link rel="stylesheet" href="climate.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="climate.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Weather Forecast for the day</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study parsing of XML which I have done using a weather API.
+                This data had been pulled from the API by appending the name of the city accepted from the user
+                in the parameters. Once I recieve XML, I have pulled values from XML for some of the data that
+                I put. Next, I arranged that on the HTML page along with a good UI.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            var temperature = $(xml).find(&quot;temperature&quot;); <br />
+            $(&quot;#temp&quot;).append(&quot;Temperature: &quot;+temperature.attr(&quot;value&quot;));
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+            <br />
+            <input id="cityname" type="text"/>
+            <button id="forecast" type="submit">Forecast!</button>
+            <h5> Enter name of a City in USA</h5>
+            <hr />
+            <div id="weatherdata">
+                <br />
+                <div id="temp">Weather: </div>
+                <br />
+                <img id="weather-image" src="../../../myimages/weather.png" />
+                <br />
+                <div id="unit">Units: </div>
+                <br />
+                <br />
+                <div id="city">City:</div>
+                <br />
+                <br />
+                <div id="country">Country:</div>
+                <br />
+                <br />
+                <div id="weather">Weather:</div>
+                <br />
+            </div>
+            <br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week6/ParseXML/climate.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week6/ParseXML/ClimateToday.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week6/ParseXML/climate.js"
+               target="_blank">JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://api.jquery.com/jquery.parsexml/" target="_blank">jquery Examples online</a>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,4 +1,0 @@
-﻿HTML5Experiments/Documentation/audioLEarn.html WEEK1:Audio Tags in HTML 5
-HTML5Experiments/Documentation/editableLearn.html WEEK1:ContentEditable tag in HTML5
-CSSExperiments/Documentation/gradient.html WEEK1: Gradient in CSS
-CSSExperiments/Documentation/webkit.html   WEEK1: Webkit in CSS

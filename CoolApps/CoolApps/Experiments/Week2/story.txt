@@ -1,0 +1,5 @@
+﻿HTML5Features/MyHTML5Page.html  WEEK3: HTML5 Features including page navigation
+iFrameAndTabs/SarpaMitra.html   WEEK3: Tabbed Interface and iFrame implementation
+CSSResponsivedesign/MyResponsiveDesign.html  WEEK3: CSS Responsive Design
+MagzineLookExperiment/MagzineLook.html  WEEK3: Magzine Look Experiment
+

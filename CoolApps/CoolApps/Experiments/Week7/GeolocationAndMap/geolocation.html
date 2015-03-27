@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My XML Parsing Experiment</title>
+    <link rel="stylesheet" href="geo.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="geo.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Weather Forecast for the day</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to extend the geolocation functionality to add the map of the current location
+                along with the weather forecast as before. This data now is being fetched from two different APIs.
+                The map that appears grom google maps api and weather details from a weather api.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            var geolocation = navigator.geolocation; <br />
+            var location = geolocation.getCurrentPosition(showLocation); <br />
+            var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&zoom=13&size=500x250&sensor=false"; <br />
+            $(&quot;#mapdiv&quot;).html(&quot;&lt;img src=&apos;&quot; + img_url + &quot;&apos;&gt;&quot;);<br />
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+        
+            <br />
+            <button id="forecast" type="submit">Forecast!</button>
+            <hr />
+            <div>
+                <div id="weatherdata">
+                    <br />
+                    <div id="temp">Weather: </div>
+                    <br />
+                    <img id="weather-image" src="../../../myimages/weather.png" />
+                    <br />
+                    <div id="unit">Units: </div>
+                    <br />
+                    <br />
+                    <div id="city">City:</div>
+                    <br />
+                    <br />
+                    <div id="country">Country:</div>
+                    <br />
+                    <br />
+                    <div id="weather">Weather:</div>
+                    <br />
+                </div>
+                <div id="mapdiv">
+                   
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week7/GeolocationAndMap/geo.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week7/GeolocationAndMap/geolocation.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week7/GeolocationAndMap/geo.js"
+               target="_blank">JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://net4.ccs.neu.edu/home/rasala/experiments/geolocation/test01.htm" target="_blank">Professor's material online</a>
+        </div>
+
+    </main>
+</body>
+</html>

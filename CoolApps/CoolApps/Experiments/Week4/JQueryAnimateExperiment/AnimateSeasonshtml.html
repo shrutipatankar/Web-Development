@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Season Cycle</title>
+    <link rel="stylesheet" type="text/css" href="seasons.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="seasons.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Animate Seasons
+        </h1>
+    </header>
+    <div class="mydivision">
+        <div class="div-header"> About the experiment </div>
+        <p>
+            This experiment is to study the effects of jquery animate function. I have used seasons theme to animate the
+            images of the seasons to come up one by one. This has been achieved with chaining of callback functions. 
+            The second image animates only when the first stops animating. This way every image animates and heads back
+            to its original position. Click on Animate Seasons button to see this effect
+        </p>
+    </div>
+    <div class="mydivision">
+        <div class="div-header">
+            Code snippet
+        </div>
+        $("#animate").click(function () { <br />
+
+        $("#summer").animate({ <br />
+        top: '250px', <br />
+        height: '+=150px', <br />
+        width: '+=150px', <br />
+
+        }).animate({ <br />
+        top: '0px', <br />
+        height: '-=150px', <br />
+        width: '-=150px', <br />
+
+        } <br />
+    </div> 
+    <div class="mydivision">
+        <div class="div-header">
+            Implementation
+        </div>
+        <br /><br /><br />
+
+        <div class="button">
+            <button id="animate">Animate Seasons</button>
+        </div>
+        <br />
+        <img id="summer" src="../../../myimages/summer.png" />
+
+        <img id="winter" src="../../../myimages/winter.gif" />
+
+        <img id="autumn" src="../../../myimages/autumn.gif" />
+
+        <img id="spring" src="../../../myimages/spring.jpg" />
+
+        <img id="monsoon" src="../../../myimages/monsoon.png" />
+    </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/jQueryExperiments/JQueryAnimateExperiment/seasons.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/jQueryExperiments/JQueryAnimateExperiment/AnimateSeasonshtml.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/jQueryExperiments/JQueryAnimateExperiment/seasons.js"
+               target="_blank">JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+            </div>
+            <a href="http://www.w3schools.com/jquery/jquery_animate.asp">w3schools</a>
+        </div>
+
+
+</body>
+</html>

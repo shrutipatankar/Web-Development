@@ -1,0 +1,255 @@
+﻿body {
+
+      text-align: center;
+    font-family: 'Comic Sans MS';
+
+}
+/*--------------------------------------------------------------------------*/
+.ul-lists{
+
+    float: left;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    height: auto;
+    width: 25%;   
+    height: auto;
+    border-color: #c4b9b9;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+
+}
+/*--------------------------------------------------------------------------*/
+ul.simple{
+
+    list-style-type: lower-greek;
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+    
+
+}
+/*--------------------------------------------------------------------------*/
+ul.symbolic{
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+ul.symbolic li{
+
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    padding-left: 25px;
+    background-image: url("order.png");
+    background-size: 20px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+
+}
+
+/*--------------------------------------------------------------------------*/
+ul.different-symbolic {
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+ul.different-symbolic li{
+
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    padding-left: 40px;
+
+
+}
+
+ul.different-symbolic li.coffee{
+
+    background-image: url("coffee.png");
+    background-size: 40px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li.tea{
+
+    background-image: url("tea.png");
+    background-size: 40px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li.milkshake{
+
+    background-image: url("milkshake.jpg");
+    background-size: 40px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+
+/*--------------------------------------------------------------------------*/
+ul.vertical-tab {
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+ul.vertical-tab li{
+
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    padding-left: 40px;
+    
+
+}
+
+ul.vertical-tab li.coffee:hover{
+
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    padding-left: 10px;
+    border-color:  #c4b9b9;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+ul.vertical-tab li.tea:hover {
+
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    padding-left: 10px;
+    border-color:  #c4b9b9;
+    border-width: 1px;
+    border-style: solid;
+    
+
+}
+
+ul.vertical-tab li.tea .hovertext{
+
+    visibility: hidden;
+    
+
+}
+
+ul.vertical-tab li.tea:hover .hovertext{
+
+    visibility: visible;
+    text-align: center;
+
+
+}
+
+ul.vertical-tab li.milkshake .hovertext{
+
+    visibility: hidden;
+
+}
+
+ul.vertical-tab li.milkshake:hover .hovertext{
+
+    visibility: visible;
+    text-align: center;
+}
+
+ul.vertical-tab li.coffee .hovertext{
+
+    visibility: hidden;
+
+}
+
+ul.vertical-tab li.coffee:hover .hovertext{
+
+    visibility: visible;
+    text-align: center;
+}
+
+ul.vertical-tab li.milkshake:hover{
+
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    padding-left: 10px;
+    border-color:  #c4b9b9;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
+
+
+
+ul.vertical-tab  li.coffee{
+
+    background-image: url("coffee.png");
+    background-size: 40px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    
+}
+
+ul.vertical-tab  li.tea{
+
+    background-image: url("tea.png");
+    background-size: 40px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+ul.vertical-tab  li.milkshake{
+
+    background-image: url("milkshake.jpg");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+/*--------------------------------------------------------------------------*/
+
+button{
+
+    width: 10%;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: #c4b9b9;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+}
+
+
+div{
+
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.mydivision{
+    width: 95%;
+    float: left;
+    text-align: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #c4b9b9;
+    color: black;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+}

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Image Slider</title>
+    <link rel="stylesheet" href="imgslide.css" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script type="text/javascript">
+        function slideshow() {
+            var $active = $('#slideshow img.active');
+            var $next = $active.next();
+
+            $next.addClass('active');
+            $active.removeClass('active');
+        }
+        $(function () {
+            setInterval("slideshow()", 2000);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h2>See the image sliding effect</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to implement a slider of images. This is done using Z-index. 
+                The image keeps on changing after 2000 microseconds.
+                z-index is set for the images in CSS and the images are stacked and displayed on after the other.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            var $active = $(&apos;#slideshow img.active&apos;); <br />
+            var $next = $active.next(); <br />
+
+            $next.addClass(&apos;active&apos;); <br />
+            $active.removeClass(&apos;active&apos;); <br />
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+            <div id="slideshow">
+                <img src="../../../myimages/flamingo.jpg" class="active">
+                <img src="../../../myimages/lionfish.jpg">
+                <img src="../../../myimages/panda.jpg">
+                <img src="../../../myimages/starfish.jpg">
+            </div>
+            <br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week7/ImageSlider/imgslide.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../../fileview/Default.aspx?~/Experiments/Week7/ImageSlider/imageslider.html"
+               target="_blank">HTML Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://net4.ccs.neu.edu/home/ruta/experiments/Week01/exp5-jQuery-image-gallery.html" target="_blank">Fellow classmates Experiments</a>
+        </div>
+
+    </main>
+</body>
+</html>

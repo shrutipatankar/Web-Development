@@ -1,0 +1,3 @@
+﻿GeolocationExperiment/geolocation.html   WEEK8: Weather Widget(Geolocation)
+GeolocationAndMap/geolocation.html   WEEK8:  Weather Widget(Geolocation and Map)
+ImageSlider/imageslider.html   WEEK8: Image slider
