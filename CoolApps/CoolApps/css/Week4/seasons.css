@@ -1,0 +1,142 @@
+﻿body {
+
+  background-color: #b9b2b2;
+  text-align: center;
+
+
+}
+
+h1{
+
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.webpage_change{
+
+    margin-left: 27%;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: ridge;
+    border-color: cadetblue;
+    height: 400px;
+    width: 600px;
+
+
+}
+
+button{
+
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    font-family:'Comic Sans MS';
+    height: 30px;
+    width: 100px;
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.wholepage{
+
+
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.summer_season{
+
+
+    height: 400px;
+    width: 580px;
+    color: yellow;
+    background-image: url("../../myimages/summer.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+
+
+}
+
+.winter_season{
+
+    color: ghostwhite;    
+    height: 400px;
+    width: 580px;
+    background-image: url("../../myimages/season_winter.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+
+}
+
+.monsoon_season{
+
+    color: blue;    
+    height: 400px;
+    width: 580px;
+    background-image: url("../../myimages/monsoon.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+
+}
+
+.autumn_season{
+
+   color: orangered;   
+    height: 400px;
+    width: 580px;
+    background-image: url("../../myimages/autumn.gif");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+
+}
+
+.spring_season{
+
+    color: forestgreen;
+    height: 400px;
+    width: 580px;
+    background-image: url("../../myimages/spring.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+
+
+}
+
+
+div{
+
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.mydivision{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #6f6666;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+    color: cadetblue;
+
+
+}

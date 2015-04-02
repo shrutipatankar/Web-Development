@@ -1,0 +1,73 @@
+﻿body {
+
+    text-align: center;
+    align-items: center;
+
+}
+
+.simpleForm{
+
+    width:95%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 5% 5% 5% 20%;
+
+
+}
+
+.myform{
+
+    width: 30%;
+    height: 400px;
+    background-color: #6189bd;
+    color: ghostwhite;
+    border-color: antiquewhite;
+    border-radius: 2%;
+    border-style: solid;
+    border-width: 1px;
+   
+
+
+}
+
+
+
+input {
+
+    height: 10%;
+    width: 50%;
+    padding: 5px 5px 5px 5px;
+    margin: 5% 5% 5% 5%;
+    font-size: medium;
+
+}
+
+
+.mydivision{
+    width: 95%;
+    float: left;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #6189bd;
+    color: ghostwhite;
+    text-align:center;
+    padding:3px;
+    margin: 1px;
+
+
+}
+
+

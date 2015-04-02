@@ -1,4 +1,4 @@
-﻿jQuerySelectorsExperiment/jQuerySelectors.html WEEK6: JQuery Selectors
-bindingExperimentJQuery/bindWithjQuery.html WEEK6: JQuery Bindings
-backbuttonExperiment/backPrevent.html WEEK6: Prevent Back Navigation
-ParseJSONExperiment/displayJSON.html WEEK6: JSON Parsing
+﻿jQuerySelectors.html WEEK6: JQuery Selectors
+bindWithjQuery.html WEEK6: JQuery Bindings
+backPrevent.html WEEK6: Prevent Back Navigation
+displayJSON.html WEEK6: JSON Parsing

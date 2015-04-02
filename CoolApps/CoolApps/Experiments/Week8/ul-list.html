@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Unordered List Experiment</title>
+    <link rel="stylesheet" href="../../css/Week8/ul-list.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h2>View different ways of viewing an unordered list</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to view different ways in which an unordered list can be rendered. 
+                I intend to use this set of experiments for my project. This experiment initially renders
+                unordered list normally, than retrieves the unordered list with a symbol, and then proceeds to
+                retrieve different items of an unordered list with different symbols and eventually renders an
+                unordered list as a vertical tab. My home page of the project intends to use such a symbolic
+                representation of a tabbed interface using unordered list.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            ul.symbolic li{ <br />
+
+            padding: 5px 5px 5px 5px; <br />
+            margin: 2px 2px 2px 2px;  <br />
+            padding-left: 25px;       <br />
+            background-image: url(&quot;../../../../myimages/order.png&quot;); <br />
+            background-size: 20px; <br />
+            background-position: 0px center; <br />
+            background-repeat: no-repeat;<br />
+
+            }
+          
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+            <br />
+            <div class="ul-lists">
+                <p> This is a simple unordered list</p>
+                <ul class="simple">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milkshake</li>
+                </ul>
+            </div>
+            <div class="ul-lists">
+                <p> This is a unordered list with symbols 
+                    instead of bullets</p>
+                <ul class="symbolic">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milkshake</li>
+                </ul>
+            </div>
+            <div class="ul-lists">
+                <p>
+                    This is a unordered list different with symbols
+                    for different values
+                </p>
+                <ul class="different-symbolic">
+                    <li class="coffee">Coffee</li>
+                    <li class="tea">Tea</li>
+                    <li class="milkshake">Milkshake</li>
+                </ul>
+            </div>
+            <div class="ul-lists">
+                <p>
+                    This is a unordered list. Please hover over the
+                    image to see the effect.
+                </p>
+                <ul class="vertical-tab">
+                    <li class="coffee">&nbsp;<p class="hovertext">Coffee</p></li>
+                    <li class="tea">&nbsp;<p class="hovertext">Tea</p> </li>
+                    <li class="milkshake">&nbsp;<p class="hovertext">Milkshake</p> </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../fileview/Default.aspx?~/css/Week8/ul-list.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week8/ul-list.html"
+               target="_blank">HTML Source code</a><br />
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+            </div>
+            <a href="http://www.w3schools.com/html/html_lists.asp" target="_blank">w3schools.com</a>
+        </div>
+
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Dynamic Class Addition Experiment</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/Week4/seasons.css" />
+    <script src="../../javascript/Week4/seasons.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>
+            Click on seasons buttons to get respective CSS for the div
+        </h1>
+    </header>
+    <hr />
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study dynamic setting of a class to a div. I have created a div with some text in 
+                it. The color of the text and the background image is set dynamically on the button click.
+                This caused some problem as the button click did act weirdly. By removing the current class and then adding 
+                the new class helped. 
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            $("#season").removeClass("winter_season autumn_season monsoon_season spring_season").addClass("summer_season");
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br /><br /><br />
+
+            <div class="wholepage">
+                <div class="mybuttons">
+                    <button id="summer">Summer</button>
+                    <button id="winter">Winter</button>
+                    <button id="autumn">Autumn</button>
+                    <button id="spring">Spring</button>
+                    <button id="monsoon">Monsoon</button>
+                </div>
+                <div class="webpage_change">
+
+                    <div id="season">
+                        <p id="summerp"> Summer! </p>
+                        <p id="winterp"> Winter! </p>
+                        <p id="autumnp"> Autumn! </p>
+                        <p id="springp"> Spring! </p>
+                        <p id="monsoonp"> Monsoon!</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+            <div class="mydivision">
+                <div class="div-header">
+                    Source Code
+                </div>
+                <a href="../../fileview/Default.aspx?~/css//Week4/seasons.css"
+                   target="_blank">CSS Source code</a><br />
+                <a href="../../fileview/Default.aspx?~/Experiments/Week4/addClass.html"
+                   target="_blank">HTML Source code</a><br />
+                <a href="../../fileview/Default.aspx?~/javascript/Week4/seasons.js"
+                   target="_blank">JavaScript Source code</a><br />
+            </div>
+            <div class="mydivision">
+                <div class="div-header">
+                    Link to references
+
+                </div>
+                <a href="http://api.jquery.com/addclass/">jQuery Docs</a>
+
+            </div>
+
+</main>
+
+</body>
+</html>

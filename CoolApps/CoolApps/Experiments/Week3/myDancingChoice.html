@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> My preferred dance </title>
+    <link rel="stylesheet" type="text/css" href="../../css/Week3/dancechoice.css" />
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../javascript/Week3/dancechoice.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>jQuery Effects Experiment</h1>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study the effects that can be achieved by using jQuery. Some of the effects that
+                I have used for the images to vanish are 
+                <ul>
+                    <li>toggle</li>
+                    <li>slide up</li>
+                    <li>slide down</li>
+                    <li>hide</li>
+                    <li>fade out</li>
+                    <li>fade in</li>
+                </ul>
+
+                I also learned chaining of these effects. If someone clicks on last two images for examples,
+                they can see that the image will slide up , then slide up and then again slide up. This has been
+                achieved by using the concept of chaining the effects one after another.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            $(".hiphop").slideUp('slow');
+            <br />
+            $(".salsa").slideUp('slow').slideDown('slow').slideUp('slow');
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br /><br /><br />
+            <div class="maindiv">
+              
+                <div class="dance-choice">
+                    <h3> Get rid of the dance you don't want to learn!</h3>
+                    <h5> Click on the dances that you do not prefer</h5>
+                    <div class="ballet">
+                        <img src="../../myimages/ballet.jpg" /><br />
+                        <button>No Ballet!</button>
+                    </div>
+                    <div class="bharatnatyam">
+                        <img src="../../myimages/bharatnatyam.jpg" /> <br />
+                        <button>No Classical!</button>
+                    </div>
+                    <div class="hiphop">
+                        <img src="../../myimages/hiphop.jpg" /> <br />
+                        <button>No hip hop!</button>
+                    </div>
+                    <div class="salsa">
+                        <img src="../../myimages/salsa.jpg" /> <br />
+                        <button>No Salsa!</button>
+                    </div>
+                    <div class="flamenco">
+                        <img src="../../myimages/flamenco.jpeg" /> <br />
+                        <button>No Flamenco!</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../fileview/Default.aspx?~/css/Week3/dancechoice.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week3/myDancingChoice.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/javascript//Week3/dancechoice.js"
+               target="_blank">JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://www.w3schools.com/jquery/jquery_chaining.asp" target="_blank">w3schools</a>
+
+        </div>
+    </main>
+</body>
+</html>

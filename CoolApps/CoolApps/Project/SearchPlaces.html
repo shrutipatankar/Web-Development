@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Search Places</title>
+    <link rel="stylesheet" type="text/css" href="css/searchplaces.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript">       
+        function initialize() {
+            var map;
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var loc = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);                 
+                    var mapOptions = {                     
+                        zoom: 13,
+                        center: loc
+                    };
+                    map = new google.maps.Map(document.getElementById('canvas-map'), mapOptions);
+                });
+           }
+           else {             
+               document.getElementById('canvas-map').innerText = "Could not locate you.. Sorry";
+           }
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <main>
+        <h1>
+            Search Places
+        </h1>  
+        <hr />   
+        <div>
+            Your current location:
+        </div>
+        <br />
+        <div id="canvas-map">
+
+
+        </div>
+        <div class="ul-lists">
+            <ul class="different-symbolic">
+                <li class="whereami"> Where am I?</li>
+                <li class="searchworld"> Search on my own</li>
+            </ul>
+        </div>
+        <div class="interface">
+
+        </div>
+    </main>
+
+</body>
+</html>

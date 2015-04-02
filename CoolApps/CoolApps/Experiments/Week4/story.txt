@@ -1,4 +1,4 @@
-﻿DropDownMenuExperiment/MyDropDownMenu.html  WEEK5: DropDown Menu using jQuery
-AJAXExperiments/DataPullExaperiment/DattaPull.html   WEEK5: AJAX Experiment to pull data from IMBD Server
-JQueryAddDynamicClass/addClass.html    WEEK5: Add dynamic classes experiment
-JQueryAnimateExperiment/AnimateSeasonshtml.html    WEEK5: JQuery Animate 
+﻿MyDropDownMenu.html   DropDown Menu using jQuery
+DattaPull.html    AJAX Experiment to pull data from IMBD Server
+addClass.html     Add dynamic classes experiment
+AnimateSeasonshtml.html     JQuery Animate 

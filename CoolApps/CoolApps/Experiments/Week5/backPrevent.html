@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Back Not Allowed </title>
+    <link rel="stylesheet" type="text/css" href="../../css/Week5/backprevent.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../javascript/Week5/backprevent.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>jQuery Effects Experiment</h1>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to implementation to prevent the user to navigate back to previous page.
+                I found this of a common use in many web applications. In this experiment, I have prevented the
+                user from navigating back by preventing the back button of the browser. Also, initially
+                I thought I could simply disable the browser button but could not do so. Therefore, using jquery
+                I have prevented the user from navigating back instead.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            function disableBack() { window.history.forward() }
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br /><br /><br />
+            <div class="maindiv">
+
+                <div class="">
+                    <button class="mybutton" id="next" >Click Me!</button>
+                    <br />
+                    <br />
+                    <h4>Click on the button above to check the navigation prevention</h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../fileview/Default.aspx?~/css/Week5/backprevent.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week5/backPrevent.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week5/nextPage.html"
+               target="_blank">HTML Source code for nextpage.html file</a><br />
+            <a href="../../fileview/Default.aspx?~/javascript/Week5/backprevent.js"
+               target="_blank">JavaScript Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/javascript/Week5/nextPage.js"
+               target="_blank">JavaScript Source code that actually prevents back button navigation
+            on nextpage.html</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://www.aspsnippets.com/Articles/Disable-Browser-back-Button-Functionality-using-JavaScript.aspx" target="_blank">AspSnippets.com</a>
+            <br />
+            <a href="http://www.encodedna.com/2014/07/restrict-or-disable-browser-back-button-using-javascript.htm" target="_blank">encodedna.com</a>
+        </div>
+    </main>
+</body>
+</html>
+

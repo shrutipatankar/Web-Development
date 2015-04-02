@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My JSON Parsing Experiment</title>
+    <link rel="stylesheet" href="../../css/Week5/jsonParse.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../javascript/Week5/jsonParse.js"></script>
+</head>
+<body>
+    <header>
+        <h2>My Json Parsing Experiment</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study parsing of json format text using jQuery. I initially placed an
+                external data.json file in the same directory. However, the jQuery $getJSON function did not
+                resolve the file and hence I used an approach to include a variable with json data.
+             
+                I have displayed this data in a tabular format. Equal efforts were put in to know the CSS 
+                rquired to make a table look beautiful!
+          
+                Also, I have provided a search box where when a firstname is put and search button is hit, 
+                jQuery displays all the data in a list format in a div just below the table.
+
+                While doing this I used find function of jQuery. This was good for my learning curve to learn parsing
+                of json.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            $(data.employees).each(function () { <br />
+            var output = &quot;&lt;tr&gt;&lt;td&gt;&quot; + this.firstname + &quot;&lt;/td&gt;&lt;td&gt; &quot; + this.lastname + &quot;&lt;/td&gt;&lt;td&gt;&quot;+ this.phone +&quot;&lt;/td&gt;&lt;td&gt;&quot; + this.birthdate +&quot;&lt;/td&gt;&lt;/tr&gt;&quot; ;
+            $(&apos;#myemp_table&apos;).append(output); <br />
+
+            });
+
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+            <h5> Put any first name from the table to get more details of the person</h5>
+            <hr />
+            <div>
+
+                <input type="text" id="searchString" />
+                <button id="search">Search</button>
+
+            </div>
+            <br />
+            <br />
+            <br />
+            <h3>Employee Data:</h3>
+
+            <table id="myemp_table">
+                <thead>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Phone Number</td>
+                        <td>Birth Date</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div id="output"></div>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../fileview/Default.aspx?~/css/Week5/jsonParse.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week5/displayJSON.html"
+               target="_blank">HTML Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/javascript/Week5/jsonParse.js"
+               target="_blank">JavaScript Source code</a><br />
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+
+            </div>
+            <a href="http://www.mkyong.com/jquery/jquery-loop-over-json-string-each-example/" target="_blank">jquery Examples online</a>
+        </div>
+
+    </main>
+</body>
+</html>

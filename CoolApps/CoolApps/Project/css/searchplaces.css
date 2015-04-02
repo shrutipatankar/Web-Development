@@ -1,0 +1,67 @@
+﻿body{
+
+    font-family: 'Arabic Typesetting';
+    font-size: large;
+    color: #337db2;
+}
+
+h1{
+        text-align: center;
+}
+
+#canvas-map{
+
+    float:left;
+    border-style: solid;
+    border-color: black;
+    box-shadow:initial;
+    border-width: 1px;
+    width: 75%;
+    height: 200px;
+}
+
+ul.different-symbolic {
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+ul.different-symbolic li{
+    font-size: large;
+    padding: 10% 10% 10% 10%;
+    margin: 2% 2% 2% 2%;
+    padding-left: 20%;
+    float: left;
+    width: 100%;
+
+
+}
+
+ul.different-symbolic li.whereami{
+
+    background-image: url("whereami.jpg");
+    background-size: 15%;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li.searchworld{
+
+    background-image: url("searchworld.png");
+    background-size: 15%;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+.ul-lists{
+
+    float: left;
+    margin: 1% 1%;
+    padding: 1% 1%;
+    height: auto;
+    width: 20%;   
+   
+
+}

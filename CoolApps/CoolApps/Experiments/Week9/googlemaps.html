@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Google Maps API Experiment 1</title>
+    <link rel="stylesheet" href="../../css/Week9/geo.css" type="text/css" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  
+    <script type="text/javascript">
+
+        function initialize1() {
+            var map;
+            var mapOptions = {
+                zoom: 8,
+                center: new google.maps.LatLng(-34.397, 150.644)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions);
+        }
+
+        function initialize2() {
+            var map;
+            var mapOptions = {
+                zoom: 6,
+                center: new google.maps.LatLng(0, 0)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas-2'), mapOptions);
+        }
+
+        function initialize3() {
+            var map;
+            var mapOptions = {
+                zoom: 0,
+                center: new google.maps.LatLng(-34.397, 150.644)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions);
+        }
+
+        function initialize4() {
+            var map;
+            var mapOptions = {
+                zoom: 19,
+                center: new google.maps.LatLng(-34.397, 150.644)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas-4'), mapOptions);
+        }
+
+        function initialize5() {
+            var map;
+            var mapOptions = {
+                zoom: 6,
+                center: new google.maps.LatLng(-34.397, 150.644),
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas-5'), mapOptions);
+        }
+
+
+        function initialize6() {
+            var map;
+            var mapOptions = {
+                zoom: 9,
+                center: new google.maps.LatLng(-34.397, 150.644),
+                mapTypeId: google.maps.MapTypeId.SATELLITE
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas-6'), mapOptions);
+        }
+
+
+        google.maps.event.addDomListener(window, 'load', initialize1);
+        google.maps.event.addDomListener(window, 'load', initialize2);
+        google.maps.event.addDomListener(window, 'load', initialize3);
+        google.maps.event.addDomListener(window, 'load', initialize4);
+        google.maps.event.addDomListener(window, 'load', initialize5);
+        google.maps.event.addDomListener(window, 'load', initialize6);
+        
+
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Google Maps API Experiment 1</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study the google javascript Maps API. I explored this API from google docs.
+                One Such map will reside on my home page to let the user know exactly where he is currently.
+                I will be providing him an option to choose the type of maps he wants to see.
+                <br />
+                I have created 6 different maps here:
+                <ul>
+                    <li> Exploring the Lat Lon options</li>
+                    <li> Exploring different zoom levels</li>
+                    <li> Exploring the types of Maps</li>
+                </ul>
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            function initialize1() { <br />
+            var map; <br />
+            var mapOptions = { <br />
+            zoom: 8, <br />
+            center: new google.maps.LatLng(-34.397, 150.644) <br />
+            };<br />
+            map = new google.maps.Map(document.getElementById(&apos;map-canvas-1&apos;), mapOptions); <br />
+            }<br />
+
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            <br />
+            <hr />
+            <br />
+            Exploring Google Maps API: Experiment 1 (mapOptions: latitude and longitude)
+            <br /> 
+            Disclaimier:Maps with static latitude and longitude showing different effects
+            <br />
+            <div class="map-type">
+
+                <!--Latitude and Longitude with some static values pointing to sydney-->
+                <div id="map-canvas-1" class="map-canvas"></div>
+
+                <!--Latitude and Longitude as 0-->
+                <div id="map-canvas-2" class="map-canvas"></div>
+            </div>
+            <br />
+
+            <br />
+            Exploring Google Maps API: Experiment 2 (mapOptions: Zoom Levels)
+            <br />
+            Disclaimier: Maps with different zoom levels 
+            <br />
+            <div class="map-type">
+
+                <!-- Map with zoom level 0 shows the most zoomed out map and as we increment the 
+                    integer value representing zoom option, we find that the the map is zoomed in more 
+                    and more:
+                    1. Map displayed toward the left is the map most zoomed out
+                    2. Map displayed toward the right is the map most zoomed in
+                 -->
+                <div id="map-canvas-3" class="map-canvas"></div>
+                <div id="map-canvas-4" class="map-canvas"></div>
+            </div>
+            <br />
+
+            Exploring Google Maps API: Experiment 3 (mapOptions: Different mapTypeId )
+            <br />
+            Disclaimier: Maps with different mapTypeIds
+            <div class="map-type">
+
+                <!-- Map with no mapTypeId  specified are by default of type ROADMAP
+                    Apart from that there are three following types of mapTypeIds
+                    1. TERRAIN
+                    2. HYBRID
+                    3. SATELLITE
+                    Below maps display the same. I have displayed TERRAIN and SATELLITE
+                 -->
+                <div id="map-canvas-5" class="map-canvas"></div>
+                <div id="map-canvas-6" class="map-canvas"></div>
+
+                
+            </div>
+            <br />
+
+           
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../fileview/Default.aspx?~/css/Week9/geo.css"
+                              target="_blank">CSS Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week9/googlemaps.html"
+               target="_blank">HTML Source code</a><br />
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+            </div>
+            <a href="https://developers.google.com/maps/documentation/javascript/reference?utm_source=welovemapsdevelopers&utm_campaign=mdr-gdl#MapTypeId" target="_blank">Google Maps API</a>      
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Restaurant Finder</title>
+    <link rel="stylesheet" href="../../css/Week9/geo.css" type="text/css" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script type="text/javascript">
+
+        var map;
+        var infowindow;
+
+        function initialize() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(function (position) {
+
+
+                    var pyrmont = new google.maps.LatLng(position.coords.latitude,
+                                           position.coords.longitude);
+                    //alert(pyrmont);
+
+                    map = new google.maps.Map(document.getElementById('map-canvas-12'), {
+                        center: pyrmont,
+                        zoom: 15
+                    });
+
+                    var request = {
+                        location: pyrmont,
+                        radius: 500,
+                        types: ['restaurant']
+                    };
+                    infowindow = new google.maps.InfoWindow();
+                    var service = new google.maps.places.PlacesService(map);
+                    service.nearbySearch(request, callback);
+
+                });
+            }
+            else {
+                alert("Could not locate");
+            }
+        }
+
+            function callback(results, status) {
+                if (status == google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        createMarker(results[i]);
+                    }
+                }
+            }
+
+            function createMarker(place) {
+                var placeLoc = place.geometry.location;
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.setContent(place.name);
+                    infowindow.open(map, this);
+                });
+            }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Google Maps API Experiment 1</h2>
+    </header>
+    <main>
+        <div class="mydivision">
+            <div class="div-header"> About the experiment </div>
+            <p>
+                This experiment is to study the Google Places Javascript API. I have referred to google docs to create a 
+                code to locate a user and find restaurants near by him.
+                <br />
+                This experiment provides locations of restaurants in the radius of 500 around the user's location.
+                It automatically detects the location of the user and sets up a map to locate the resaurants nearby.
+            </p>
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Code snippet
+            </div>
+            var request = { <br />
+            location: pyrmont, <br />
+            radius: 500, <br />
+            types: [&apos;restaurant&apos;] <br />
+            }; <br />
+            infowindow = new google.maps.InfoWindow(); <br />
+            var service = new google.maps.places.PlacesService(map); <br />
+        </div>
+
+        <div class="mydivision">
+            <div class="div-header">
+                Implementation
+            </div>
+            
+            <div class="map-canvas-12" id="map-canvas-12">
+
+
+            </div>
+
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Source Code
+            </div>
+            <a href="../../fileview/Default.aspx?~/css/Week9/geo.css"
+               target="_blank">CSS Source code</a><br />
+            <a href="../../fileview/Default.aspx?~/Experiments/Week9/RestaurantFinder.html"
+               target="_blank">HTML Source code</a><br />
+
+        </div>
+        <div class="mydivision">
+            <div class="div-header">
+                Link to references
+            </div>
+            <a href="https://developers.google.com/maps/documentation/javascript/places#place_search_requests" target="_blank">Google  API</a>
+        </div>
+
+    </main>
+
+</body>
+</html>

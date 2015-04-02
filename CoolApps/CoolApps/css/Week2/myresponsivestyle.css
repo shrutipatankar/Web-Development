@@ -1,0 +1,57 @@
+﻿body {
+
+    background-color: #3a7a43;
+    color: white;
+    font-family: 'Comic Sans MS';
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.mysection{
+
+    text-align: justify;
+    width: 40%;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+}
+
+.myimage{
+
+    width: 100%;
+    margin: 0px;
+    border-radius: 2%;
+    float: left;
+
+}
+
+.div-header{
+    float: left;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #2d4f31;
+    text-align:center;
+
+
+}
+
+
+.mydivision{
+    width: 100%;
+    float: left;
+}
+
+
+a:link{
+
+    color: papayawhip;
+}
+
+a:visited{
+
+    color:ghostwhite;
+}
