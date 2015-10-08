@@ -1,54 +1,217 @@
-﻿<!DOCTYPE html>
+﻿<!--
+       AUTHOR:     SHRUTI SANJAY PATANKAR
+       FILE TYPE:  HTML
+       DISCLAIMER: THIS CODE HAS BEEN DONE AS A PART OF WEB DEVELOPMENT LEARNING COURSE
+       TERM:       SPRING 2015
+       PROFESSOR:  RICHARD RASALA
+       UNIVERSITY: NORTHEASTERN UNIVERSITY, BOSTON
+       ALL THE IMAGES USED IN THIS EXPERIMENT RESIDE UNDER IMAGES FOLDER OF THE PROJECT FOLDER
+
+      About Search Place Page: SearchPlace.html
+
+      This page provides the user with an interface to get information about the place by using current 
+      location of the user.
+
+      NOTE:
+
+      By default the page displays the current location of the user. The user can see the restaurants
+      near by, in the interface below the map. He can choose to filter the restaurants with the options
+      provided like searching for cafes and restaurants etc
+
+      User can select a different tab to check weather of the place. Also, similarly he can check the
+      history of the place as well.  
+
+      Disclaimer: All the images used on this page have been downloaded from the web after checking for
+      copyright sign. I am not the owner of the images. I intend to simply use the images for
+      developing this project as a part of my learning curve.
+
+-->
+
+
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Search Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="css/searchplaces.css" />
+    <!-- Loading necessary libraries-->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script type="text/javascript">       
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/loadimagesviaurl.js"></script>
+    <script src="javascript/searchPlaces.js"></script>
+ 
+
+    <script type="text/javascript">
+
+       
+        /*This function adds a class to the image that is active and flips it after every 5 seconds
+            Please refer to image slider experiment in Week 7. It uses the same concept */
+       function slideshow() {
+            var $active = $('#frame img.active');
+            var $next = $active.next();
+            $next.addClass('active');
+            $active.removeClass('active');
+        }
+        $(function () {
+            setInterval("slideshow()", 3000);
+        }); 
+
+    </script>
+    <script type="text/javascript"> 
+       
+        var loc;
+        var map;
+        /* Code to display the map in div with map-canvas*/         
         function initialize() {
-            var map;
+           
+            /*Using geolocation to detect latitude and longitude*/
             if (navigator.geolocation) {
 
                 navigator.geolocation.getCurrentPosition(function (position) {
-                    var loc = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);                 
+                    loc = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);                 
                     var mapOptions = {                     
-                        zoom: 13,
+                        zoom: 14,
                         center: loc
                     };
                     map = new google.maps.Map(document.getElementById('canvas-map'), mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: loc,
+                        map: map
+                    });
+
                 });
            }
-           else {             
+            else {
+                /*If navigator.geolocation fails to obtain the position of the user*/
                document.getElementById('canvas-map').innerText = "Could not locate you.. Sorry";
            }
         }
         google.maps.event.addDomListener(window, 'load', initialize);
+
+        /*On window resize, the center of the map resets to the center of the place*/
+        google.maps.event.addDomListener(window, 'resize', function () {
+            map.setCenter(loc);
+        });
     </script>
 </head>
 <body>
     <main>
-        <h1>
-            Search Places
-        </h1>  
-        <hr />   
-        <div>
+        <!--This menu provides the easy navigation to home page, documentation, source files etc-->
+        <div class="top-menu">
+            <div class="menu-right">
+                Travel Diaries!
+            </div>
+            <div class="menu-left">
+                <a href="home.html">HOME</a>
+                <a href="SearchPlaces.html">SEARCH PLACE</a>
+                <a href="Test_SearchPage_ByLatLon.html">TEST SEARCH</a>
+                <a href="../story/index.htm?../Project/Documentation/story.txt" target="_blank">DOCUMENTATION</a>
+                <a href="../story/index.htm?../Project/story.txt" target="_blank">SOURCE</a>
+            </div>
+           
+        </div>
+        <br />
+        <hr />
+        <div class="sometext">
             Your current location:
         </div>
         <br />
+        <!--div to display the map locating the user to his current position-->
         <div id="canvas-map">
 
 
         </div>
-        <div class="ul-lists">
-            <ul class="different-symbolic">
-                <li class="whereami"> Where am I?</li>
-                <li class="searchworld"> Search on my own</li>
-            </ul>
+        <!-- This div is used to display the pictures of the place -->
+        <div id="frame">
+             
+          
         </div>
-        <div class="interface">
+        <!--This div displays the various details about the place-->
+        <div id="details">
+            <div class="menu">
+                <a href="#food" id="foodTab"> <img src="images/hungry_2.png" class="icons"> &nbsp;I am hungry!</a>
+                <a href="#climate" id="climateTab"><img src="images/climate.jpg" class="icons"> &nbsp; Climate</a>
+                <a href="#history" id="historyTab"> <img src="images/history.jpg" class="icons"> &nbsp; History!</a>
+                <a href="#placesWorthVisting" id="placesWorthVistingTab"><img src="images/places.png" class="icons"> &nbsp; Places Worth Visting</a>
+            </div>
+  
+            <!--This div specifically changes the current radio buttons to small icons. This is for better UI-->
+            <div class="outline-div">
+                <div id="food">
+                    <div id="food_filter">
+                        <label>
+                            <input type="radio" value="restaurant" name="type_of_restautants" checked class="hidden" />
+                            <span class="radio-button-span"><img src="images/restaurant.png" class="radio-img" />Restaurant</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="cafe" name="type_of_restautants" class="hidden" />
+                            <span class="radio-button-span"><img src="images/coffee.jpg" class="radio-img" />Cafe</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="bakery" name="type_of_restautants" class="hidden" />
+                            <span class="radio-button-span"><img src="images/bakery.png" class="radio-img" />Bakery</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="bar" name="type_of_restautants" class="hidden" />
+                            <span class="radio-button-span"><img src="images/bar.jpg" class="radio-img" />Bar</span>
+                        </label>
+                    </div>
+                    <!--This table actually displays the details like name of the restaurant, address etc..-->
+                    <table id="myRestaurant_table">
+                        <tr>
+                            <th> Restaurant</th>
+                            <th> Address</th>
+                            <th> Rating</th>
+                            <th> Open Now?</th>
+                        </tr>
+                    </table>
 
+                </div>
+                <!-- This div fetched and displays information based on teh current location of the user
+                    Details like temperature in kelvin, city, country, weather, humidity and windspeed are 
+                    displayed for the user. 
+                    
+                    Disclaimer: This has been achieved by fetching data from openWeatherAPI-->
+                <div id="climate">
+                    <img src="images/weather.jpg" id="weather-image"/>                  
+                    <ul class="different-symbolic">
+                        <li id="temp_symbol">&nbsp;&nbsp;<p id="temp"></p></li>
+                        <li id="city_symbol">&nbsp;&nbsp;<p id="city"></p></li>
+                        <li id="country_symbol">&nbsp;&nbsp;<p id="country"></p></li>
+                        <li id="weather_symbol">&nbsp;&nbsp;<p id="weather"></p></li>
+                        <li id="humidity_symbol">&nbsp;&nbsp;<p id="humidity"></p></li>
+                        <li id="windSpeed_symbol">&nbsp;&nbsp;<p id="windspeed"></p></li>
+                    </ul>
+                </div>
+                <div id="history">
+                    I am sorry. But since history of a place can date way back, I could not find a suitable API
+                    which can pull history data of a place! 
+                    <br />
+                    Apologies for any inconvienience caused.
+
+                </div>
+                <!--This table displays places worth visiting near by the user's current location
+                    
+                    Disclaimer: This data has been fetched using Google Places API-->
+                <div id="placesWorthVisting">
+                    <table id="my_placesWorthVistingTable">
+                        <tr>
+                            <th> Place</th>
+                            <th> Address</th>
+                            <th> What is it?</th>
+                            <th> Open now?</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </main>
-
+    <!-- Simple Footer -->
+    <footer>
+        @Copyright Shruti Patankar
+    </footer>
 </body>
 </html>

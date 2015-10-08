@@ -1,0 +1,14 @@
+﻿SearchPageFeature_1.html  Location detection
+SearchPageFeature_2.html  Search About the Place
+SearchPageFeature_3.html  Search Place: I am hungry Features!
+SearchPageFeature_4.html  Search Place: Places Worth Visting!
+SearchPageFeature_5.html  Search Place: Open the place in a new Map
+SearchPageFeature_6.html  Climate Tab
+SearchPageFeature_7.html  History Tab
+SearchPageFeature_8.html  Responsive Search Place Page Feature
+SearchPageFeature_9.html  Image Flip for places
+
+
+
+
+

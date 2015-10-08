@@ -4,18 +4,24 @@
     // format the same to get the required information
     $("#forecast").click(function () {
 
-        $("#temp").empty();
-        $("#unit").empty();
-        $("#city").empty();
-        $("#country").empty();
-        $("#weather").empty();
-
-
+        
+        var Regex = /[a - zA - Z0 - 9]/;
         var cityname = $("#cityname").val();
+        var re = new RegExp(Regex);
+        var validatestring = re.test(cityname);
+        alert(validatestring)
+        if (validatestring)
+         {
+        
+            $("#temp").empty();
+            $("#unit").empty();
+            $("#city").empty();
+            $("#country").empty();
+            $("#weather").empty();
 
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/weather?q="+cityname+"%22boston%22&mode=xml",
+            url: "http://api.openweathermap.org/data/2.5/weather?q="+cityname+"&mode=xml",
             dataType: "xml",
             success: parseXml
         });
@@ -32,6 +38,10 @@
             $("#country").append("Country: "+city.find("country").text());
             $("#weather").append("Weather: "+weather.attr("value"));
        
+        }
+        }
+        else {
+            alert("Enter a valid city name");
         }
     });
 });

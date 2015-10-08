@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Bug List</title>
+    <link href="Docmentation.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <div class="Page-header">
+            Bug List
+        </div>
+        <div class="details-div">
+
+            <div class="feature-explanation">
+              <ol>
+                  <li>
+                      It takes time for Climate data to appear sometimes. Somehow, thereby, the screen appears unloaded.
+                      Kindly refer the screenshot below. This behavior is not reproducible. It happens sometimes.
+                  </li>
+                  <li>
+                      For cell phone usage, I have not been able to make the table related to places Worth
+                      visting appear very properly. Since, I want
+                      to show the data related to Name, Address, Rating and if its currently open, it somehow may appear 
+                      very clumped up. I am working on it to fix it.
+                  </li>
+                  <li>
+                      Maps that open after clicking on a address do not center the location sometimes. If Goole cannot
+                      find the place based on the address provided, it ends up showing a hovering map of Boston (wherever
+                      the user is located)
+
+                  </li>
+                  <li>
+                      The images that appear relevent to the search of places, slide show all the images only once.
+                      (No screenshot for this bug)
+                  </li>
+                  <li>
+                     Another bug, which I just found yesterday, was when I reached the daily limit by google Places API
+                      during testing. I could not get an appropriate error message and had to debug as to why the table did 
+                      not get populated (No screenshot for this bug)
+                  </li>
+                  <li>
+                     If a place exists in the Google Places API JSON object twice, the table is loaded with both values.
+                      This bug may not be reproducible always. It depends on the location of the user. In the screen shot
+                      given below, Isabella Stewart Gardner Museum appears twice, since its entrace has changed to open
+                      to the other road. 
+
+                      I am working on this bug. However, it may alter the speed with which the results are based, since
+                      before I put it in a table I need to always check if that name already does not exist. And 
+                      this case is very rare that two places with same name and different address may appear.
+
+                      I will try and search for a work around of this bug.
+                  </li>
+                  <li>
+                      Mozilla Firefox faces an issue while rendering the Search Places page. The table appears to move out
+                      of the screen. I am trying to fix the CSS for the same. Although Chrome, Safari and IE render everything
+                      perfectly, I took time to look into this error but havnt been able to resolve it.
+                      Please see the screenshot for more details
+                  </li>
+
+              </ol>
+            </div>
+
+        </div>
+        <div class="image-div">
+            <div class="div-header">
+                Bug Screenshots
+            </div>
+            <div class="image-frame">
+
+                Climate Bug:
+                <br />
+                <img src="BugList/climate_bug.jpg" class="special-images-2">
+                <br />
+                <hr />
+
+                Cell Table for Places Worth Visting :
+                <br />
+                <img src="BugList/cell_table_bug.png" class="special-images-2">
+                <br />
+                <hr />
+
+                 Map bug :
+                <br />
+                <img src="BugList/Map_Bug.png" class="special-images-5">
+                <br />
+                <hr />
+
+                Place appearing twice bug :
+                <br />
+                <img src="BugList/place_twice_bug.png" class="special-images-1">
+                <br />
+                <hr />
+
+                Rendering in Firefox Bug :
+                <br />
+                <img src="BugList/firefox_bug.png" class="special-images-1">
+                <br />
+                <hr />
+
+            </div>
+
+        </div>
+        <br />
+        <br />
+
+    </main>
+</body>
+</html>
+
+

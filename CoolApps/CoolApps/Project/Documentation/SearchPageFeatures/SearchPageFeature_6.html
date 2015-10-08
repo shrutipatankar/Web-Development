@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Search Page Feature 6</title>
+    <link href="../Docmentation.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <div class="Page-header">
+            Climate Tab
+        </div>
+        <div class="image-div">
+            <div class="div-header">
+                Feature Screenshots
+            </div>
+            <div class="image-frame">
+              
+                <img src="screenshots/climate.png" class="special-images-1">
+                <hr />
+
+            </div>
+
+        </div>
+        <br />
+        <br />
+        <div class="details-div">
+
+            <div class="feature-explanation">
+               The Climate tab shows following data:
+                <ul>
+                    <li>Temperature in Fahrenheit</li>
+                    <li>City (May locate county)</li>
+                    <li>Country</li>
+                    <li>Weather Details in short</li>
+                    <li>Humidity</li>
+                    <li>Windspeed</li>
+                </ul>
+                Note that the images that appear next to the data of climate are actually unordered lists. I have
+                enhanced the unordered lists to have different images to show the data.
+
+                All this data is pulled from OpenWeather API. Note that open weather API provides temperatures only in
+                Kelvin. I have internally converted the Kelvin temperature to Fahrenheit by using following formula:
+                <br />
+                1.8 * (Kelvin-273)) +32
+                (found on following site:<a href="http://www.metric-conversions.org/temperature/kelvin-to-fahrenheit.htm" target="_blank">Kelvin-to-Fahrenheit</a>)
+                <br />
+                Disclaimer: There is a current bug known for the feature above. Please refer the bug list for more details.
+                <br />
+                <br />
+                <a href="../../../fileview/Default.aspx?~/Project/SearchPlaces.html" target="_blank">View HTML Source</a>
+                <br />
+                <a href="../../../fileview/Default.aspx?~/Project/javascript/searchPlaces.js" target="_blank">View JS Source</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+

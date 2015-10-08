@@ -1,0 +1,7 @@
+﻿TestSearchPageFeature_1.html  Enter Latitude and Longitude
+TestSearchPageFeature_2.html  Validate Latitude and Longitude
+TestSearchPageFeature_3.html  Map Feature
+TestSearchPageFeature_4.html  I am hungry!
+TestSearchPageFeature_5.html  Climate,History and Places Worth Visting
+TestSearchPageFeature_6.html  Responsive Page
+TestSearchPageFeature_7.html  London Test Results

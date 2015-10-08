@@ -1,13 +1,57 @@
-﻿body{
+﻿/*        
+    AUTHOR:     SHRUTI SANJAY PATANKAR
+    FILE TYPE:  CSS
+    DISCLAIMER: THIS CODE HAS BEEN DONE AS A PART OF WEB DEVELOPMENT LEARNING COURSE
+    TERM:       SPRING 2015
+    PROFESSOR:  RICHARD RASALA
+    UNIVERSITY: NORTHEASTERN UNIVERSITY, BOSTON
 
-    font-family: 'Arabic Typesetting';
-    font-size: large;
+    About home.css:
+    This css has been applied to the home page of the project(home.html)
+
+*/
+.top-menu .menu-left a{
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
     color: #337db2;
+    font-weight: bold;
+    font-size: medium;
+    float: left;
 }
 
-h1{
+.top-menu .menu-right{
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
+    color: #337db2;
+    font-size: medium;
+    float: right;
+}
+
+
+.top-menu{
+    float: left;
+    width: 100%;
+}
+
+
+body{
+ 
+    color: #337db2;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+    font-size: medium;
+    overflow-x: hidden;
+}
+
+h2{
         text-align: center;
 }
+
+
 
 #canvas-map{
 
@@ -16,8 +60,308 @@ h1{
     border-color: black;
     box-shadow:initial;
     border-width: 1px;
-    width: 75%;
-    height: 200px;
+    width: 65%;
+    height: 270px;
+    margin-left: 1%;
+    padding-left: 3%;
+}
+
+
+
+#frame{
+
+    position: relative;
+    width: 20%;
+    height: 260px;    
+    margin-left: 2%;
+    float: left;
+    border-color: #337db2;
+    border-width: 3px;
+    border-style: inset;
+    border-radius: 5px;
+
+}
+
+/* The image in the div is made to exactly fit into the page*/
+#frame img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 260px;
+        width: 100%;
+        z-index: 8;
+        border-radius: 1px;
+}
+
+/* image that is currently active*/
+#frame img.active {
+        z-index: 10;
+}
+
+/* Image rhat was last active*/
+#frame img.last-active {
+        z-index: 9;
+}
+
+
+table{
+    border-radius: 10px;
+    width: 97%;
+    border-color: black;
+    border-width: 1px;
+    border-style: ridge;
+    border-collapse: collapse;
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999; 
+    box-shadow: 5px 5px 0px #999;
+
+     
+}
+
+th{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0.2% 0.2%;
+    padding: 2% 2% 2% 2%;
+    height: 3%;
+    background-color: #337db2;
+    color: ghostwhite;
+    border-color: black;
+    border-width: 1px;
+    border-style: ridge;
+    
+}
+
+
+td,tr{
+    margin: 1% 1%;
+    padding: 1% 1% 1% 1%;
+    border-color: black;
+    border-width: 1px;
+    border-style: ridge;
+    height: 1%;
+
+}
+
+tr:nth-child(odd){
+
+    background-color: #afdafa;
+}
+
+#details{
+
+    float: left;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    width: 91.5%;
+
+}
+
+.sometext{
+
+    width: 90%;
+    padding-left: 0.5%;
+    margin-left: 1%;
+
+}
+
+.sometext_latlon{
+
+    width: 90%;
+    padding-left: 0.5%;
+    margin-left: 1%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #337db2;
+    padding: 1% 1%;
+    color: #337db2;
+    
+
+
+}
+
+.sometext_latlon input[type=button]{
+
+    color: ghostwhite;
+    background-color: #337db2;
+    font-family: 'Comic Sans MS';
+    padding:0.5%;
+    border-radius: 7px;
+    margin: 1%;
+
+
+
+}
+
+.sometext_latlon input[type=text]{
+
+    font-family: 'Comic Sans MS';
+    color: #337db2;
+
+}
+
+footer{
+
+    width: 96%;
+    padding: 1% 1% 1% 1%;
+    margin: 1% 1% 1% 1%;
+    float: left;
+
+}
+
+#places{
+
+    width: 98%;
+    height: auto;
+    float: left;
+}
+
+.menu{
+
+    width: 97%;
+    /* background-color: #337db2;  */
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    padding-top: 1%;
+    border-radius: 5px;
+    float: left;
+
+    
+
+}
+
+.menu a{
+
+    color: #337db2;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    padding: 0.5% 5% 0.5% 5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    float: left;
+
+}
+
+
+
+#food_filter{
+
+    
+    text-align: center;
+    border-color: #337db2;
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 94%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+
+
+}
+
+#food_filter label:hover{
+
+    -moz-box-shadow: 5px 5px 5px #999;
+    -webkit-box-shadow: 5px 5px 5px #999; 
+    box-shadow: 5px 5px 5px #999;
+}
+
+
+#food_filter label{
+
+    display: inline-block;
+}
+
+
+
+#food_filter .radio-button-span {
+
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+
+
+}
+
+#food_filter .radio-button-span .radio-img{
+
+    height: 40px;
+    width: 40px;
+
+
+}
+
+.icons{
+
+    height: 50px;
+    width: 50px;
+
+}
+
+.menu a:hover{
+    border: solid 1px #CCC; 
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999; 
+    box-shadow: 5px 5px 0px #999;
+}
+
+.hidden{
+
+    visibility: hidden;
+
+}
+
+#climate{
+
+    width: 90%;
+    float: left;
+      border: solid 1px #CCC; 
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999; 
+    box-shadow: 5px 5px 0px #999;
+    padding-left: 3%;
+    border-radius: 10px;
+    
+}
+
+#history{
+    
+    width: 90%;
+    float: left;
+      border: solid 1px #CCC; 
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999; 
+    box-shadow: 5px 5px 0px #999;
+    padding-left: 3%;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+#temp,#unit,#city,#country,#weather,#windspeed,#humidity{
+    width: 45%;
+    padding: 0.2% 0.2%;
+    margin: 1% 1%;
+    float: left;
+}
+
+#weather-image{
+   
+    float:right; 
+    padding: 3% 3% 3% 3%;
+    margin: 2% 2% 2% 2%;
+    border-radius: 10px;
+    height: auto;
+    width: 40%;
+   
+
 }
 
 ul.different-symbolic {
@@ -26,42 +370,300 @@ ul.different-symbolic {
     padding: 0px;
     margin: 0px;
 
+
 }
 
 ul.different-symbolic li{
-    font-size: large;
-    padding: 10% 10% 10% 10%;
-    margin: 2% 2% 2% 2%;
-    padding-left: 20%;
+
+    width: 80%;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 5px;
+    padding-left: 40px;
+
+
+}
+
+ul.different-symbolic li#temp_symbol{
+
+    background-image: url("temp.png");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+
+ul.different-symbolic li#city_symbol{
+
+    background-image: url("city.png");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li#country_symbol{
+
+    background-image: url("country.png");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li#weather_symbol{
+
+    background-image: url("weather.png");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li#humidity_symbol{
+
+    background-image: url("humidity.png");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+ul.different-symbolic li#windSpeed_symbol{
+
+    background-image: url("windspeed.png");
+    background-size: 30px;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+
+#details .menu a{
+    
+    text-align: left;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 2% 0.5% 2%;
+    text-decoration: none;
+    color: #337db2;
+    font-weight: bold;
+    font-size: 90%;
+    float: left;
+
+
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    #canvas-map{
+        width: 90%;
+
+    }
+
+    #frame{
+        display: block;
+        visibility: hidden;
+        height: 2px;
+        width: 2px;
+
+    }
+
+    
+   #details .menu a{
+    
+    text-align: left;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
+    color: #337db2;
+    font-weight: bold;
+    font-size: 100%;
+    float: left;
+    width: 94%;
+
+
+}
+
+   #climate{
+
+    width: 90%;
+    float: left;
+      border: solid 1px #CCC; 
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999; 
+    box-shadow: 5px 5px 0px #999;
+    padding-left: 3%;
+    border-radius: 10px;
+    
+}
+
+   #climate .different-symbolic li{
+
+       width: 95%;
+       float: left;
+
+   }
+
+#temp,#unit,#city,#country,#weather,#windspeed,#humidity{
+    width: 45%;
+    padding: 0.2% 0.2%;
+    margin: 1% 1%;
+    float: left;
+}
+
+#weather-image{
+
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right:auto;
+
+
+}
+#placesWorthVisting{
+
+    width: 94%;
+
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        width: 100%;
+        font-size: 120%;
+        overflow-x: hidden;
+    }
+
+    .top-menu .menu-left a {
+    text-align: center;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
+    color: #337db2;
+    font-weight: bold;
+    font-size: 100%;
+    float: left;
+    width: 94%;
+
+}
+
+.top-menu .menu-right {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
+    color: #337db2;
+    font-size: 120%;
+    float: right;
+    width: 94%;
+}
+
+
+.top-menu {
     float: left;
     width: 100%;
 
+}
+
+.menu{
+     float: left;
+     width: 94%;
+
 
 }
 
-ul.different-symbolic li.whereami{
+.menu a{
 
-    background-image: url("whereami.jpg");
-    background-size: 15%;
-    background-position: 0px center;
-    background-repeat: no-repeat;
-}
-
-ul.different-symbolic li.searchworld{
-
-    background-image: url("searchworld.png");
-    background-size: 15%;
-    background-position: 0px center;
-    background-repeat: no-repeat;
-}
-
-.ul-lists{
-
+    text-align: left;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
+    color: #337db2;
+    font-weight: bold;
+    font-size: 120%;
     float: left;
-    margin: 1% 1%;
-    padding: 1% 1%;
-    height: auto;
-    width: 20%;   
-   
+    width: 94%;
+
+}
+
+#details{
+
+    width: 90%;
+    float: left;
+
+
+}
+
+#food_filter{
+
+    width: 90%;
+    border-color: #337db2;
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+#details .menu a{
+    
+    text-align: left;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    text-decoration: none;
+    color: #337db2;
+    font-weight: bold;
+    font-size: 120%;
+    float: left;
+    width: 94%;
+
+
+}
+
+#food_filter label{
+
+     
+    text-align: center;
+    color: #337db2;
+    font-weight: bold;
+    font-size: 90%;
+    float: left;
+    width: 94%;
+    
+}
+
+#placesWorthVisting{
+
+    width: 90%;
+
+}
+
+.sometext_latlon{
+
+   padding-top: 10px;
+
+}
+
+.sometext_latlon input[type=text]{
+
+    width: 75%;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+.sometext_latlon input[type=button]{
+
+
+    width: 30%;
+    margin: 2px;
+
+}
 
 }

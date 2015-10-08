@@ -1,2 +1,7 @@
-﻿../../fileview/Default.aspx?~/Project/Home.html Home Page
-../../fileview/Default.aspx?~/Project/css/home.css Home Page CSS
+﻿../fileview/Default.aspx?~/Project/Home.html Home Page
+../fileview/Default.aspx?~/Project/css/home.css Home Page CSS
+../fileview/Default.aspx?~/Project/SearchPlaces.html Search Places Page
+../fileview/Default.aspx?~/Project/css/searchPlaces.css Search Places Page CSS
+../fileview/Default.aspx?~/Project/javascript/searchPlaces.js Search Places Javascript File
+../fileview/Default.aspx?~/Project/Test_SearchPage_ByLatLon.html Test Search Page
+../fileview/Default.aspx?~/Project/javascript/searchPlaces_TestPage.js Test Search Javascript File

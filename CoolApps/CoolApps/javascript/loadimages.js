@@ -113,6 +113,7 @@ function LoadImages
     (imageDirectoryURL, imageListFileName, imageNames,
      callback, max, gap)
 {
+
     if (imageDirectoryURL == null)
         imageDirectoryURL = "";
 

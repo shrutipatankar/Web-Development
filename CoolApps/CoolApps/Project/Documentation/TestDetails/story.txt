@@ -1,0 +1,7 @@
+﻿SafariBrowserTesting.html Testing For Safari Browser
+IETesting.html  Testing for IE (11.0.9)
+CostaRica.html  Testing Document from Costa Rica 
+India.html      Testing Document from India
+Singapore.html  Testing Document from Singapore
+
+

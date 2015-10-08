@@ -14,8 +14,8 @@
 
        1. Places and Restaurants: Google Places API
        2. Maps: Google Maps API
-       3. Weather: Yahoo Weather API
-       4. History: Wikipedia API
+       3. Weather: Open Weather API
+       4. History: Wikipedia API 
 
 
 
@@ -36,15 +36,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/home.css" />
     <title>Travel Diaries Home Page</title>
-   
+    <script type="text/javascript" src="../javascript/loadimages.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
     <script type="text/javascript">
         /* This function adds a class to the image that is active and flips it after every 5 seconds
             Please refer to image slider experiment in Week 7. It uses the same concept */
-        function slideshow() {
+        /*function slideshow() {
             var $active = $('#background img.active');
             var $next = $active.next();
             $next.addClass('active');
@@ -52,7 +53,77 @@
         }
         $(function () {
             setInterval("slideshow()", 5000);
-        });
+        });*/
+
+        /*
+        Instead of z-index, I have used the concept from Professor Rasala's Golden Gates Experiment
+        Below code exactly uses the loadimages file to flip the images into an infinite slide show
+        */
+        var imageDirectoryURL = "images/HomePageImages/";
+        var imageListFileName = "ImagesPathFile.txt";
+        var imageNames = [];
+        //var imageNames = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"];
+
+        var slide_show_images = [];
+        var length = 0;
+
+        // Call the loadImages function of the library
+        function loadImages() {
+            new LoadImages
+                (imageDirectoryURL,
+                 imageListFileName,
+                 imageNames,
+                 loadImagesCallback);
+        }
+
+
+        function loadImagesCallback(data) {
+            // load images received in the array declared slide_show_images
+       
+            slide_show_images = data;
+            length = data.length;
+
+            // Continue initialization of the application.
+            initialize();
+        }
+
+        // Initializion function called after images are loaded
+        function initialize() {
+            init_page();
+            start_slide_show();
+        }
+
+        var base;
+        var image_index = 0;
+        var saved_image_index = 0;
+        var delay = 3000;
+        
+        function init_page() {
+            base = $("#background");
+            base.append(slide_show_images[0]);
+        }
+
+        function slide_show_step() {          
+                image_index++;
+
+                if (image_index >= length)
+                {
+                    image_index = 0;
+                }
+                
+            // now remove old child
+                base.empty();
+
+            // now append new child
+            base.append(slide_show_images[image_index]);
+        }
+
+        function start_slide_show() {
+
+                    setInterval(slide_show_step, delay);
+    
+        }
+        $(loadImages);
     </script>
 </head>
 <body>
@@ -61,15 +132,17 @@
          And another is to simply display name of the project which is "Travel Diaries"
          This div to display name of the project appears towards the right of this div -->
     <div class="menu">
-        <div class="menu-left">
-            <a href="home.html">HOME</a>
-            <a href="SearchPlaces.html">SEARCH PLACE</a>
-            <a href="home.html">DOCUMENTATION</a>
-            <a href="../story/index.htm?../Project/story.txt" target="_blank">SOURCE</a>
-        </div>
         <div class="menu-right">
             Travel Diaries!
         </div>
+        <div class="menu-left">
+            <a href="home.html">HOME</a>
+            <a href="SearchPlaces.html">SEARCH PLACE</a>
+            <a href="Test_SearchPage_ByLatLon.html">TEST SEARCH</a>
+            <a href="../story/index.htm?../Project/Documentation/story.txt" target="_blank">DOCUMENTATION</a>
+            <a href="../story/index.htm?../Project/story.txt" target="_blank">SOURCE</a>
+        </div>
+       
     </div>
 
     <br />
@@ -77,33 +150,19 @@
     <!--This div with div id="background" holds all the images which flip in this div
         using javascript, a class is added to the image which makes it get displayed-->
     <div id="background">
-        <img src="images/1.jpg" class="active"/>
-        <img src="images/2.jpg" />
-        <img src="images/3.jpg" />
-        <img src="images/4.jpg" />
-        <img src="images/5.jpg" />
-        <img src="images/6.jpg" />
-        <img src="images/7.jpg" />
-        <img src="images/8.jpg" />
-        <img src="images/9.jpg" />
-        <img src="images/10.jpg" />
+
     </div>
     <!--This div with id="summary displays the content of this page. The content simply comprises of
         explaination of this website and how to use it."-->
     <div id="summary">
         <p>
-            I have always wanted to travel! Are you like me? Then you would absolutely love this site.
-            What is it that we want to know when we travel? We would want to know the place better, right?
-            What is the history of the place? What's the weather like? Where should I eat? What are the places 
-            worth visiting? All the answers to all the above questions would be answered at a single place!
+            Travel and change of place impart new vigor to the mind!  -- Seneca
             <br />
-            <br />
-          
-            Let me introduce you to Travel Diaries! Find everything you want to know about the place! <br />
-            So you didnt check it before you traveled! I know your kind! You can check it based on your current
-            location too!
-            <br />
-            Go ahead! TRAVEL...!!!           
+            OfCourse they do.. Everyone wants to break the monotony of life and work. And what better way than to get away for some time, travel, relax and enjoy a whole new experience!
+            Hang on, before you get that far with your daydream, you don’t know the route, the weather or what will you get to eat? Well, google maps might pull up things a bit for you. But after you get there, what next?
+            Introducing “Travel Diaries” Your ultimate guide to enjoy a new place.  Get to know the weather, landmarks, restaurants and everything you want to explore in your travel.
+
+            Go ahead, have a rejuvenating time and an added zeal using the TRAVEL DIARIES..!!!           
         </p>
     </div>
     <!--This footer conveys that I am the sole author of this Website-->
